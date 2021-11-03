@@ -8,6 +8,14 @@ package br.infnet.edu.polimorfismo;
  *
  * @author wasabi
  */
-public class Retangulo {
+public class Retangulo extends Forma {
     
+    public Retangulo(int l, int a) {
+        super(l, a);
+    }
+    
+    @Override
+    public int area() {
+        return getAltura() * getLargura();
+    }
 }

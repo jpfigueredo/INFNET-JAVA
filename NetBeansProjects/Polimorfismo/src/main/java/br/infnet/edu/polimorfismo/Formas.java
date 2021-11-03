@@ -17,11 +17,12 @@ public class Formas {
         //     Usa sobrescrita pra fazer a classe se comportar de acordo com o que for dado.
         //     Ele identifica a forma em tempo de execuçãos
         Forma forma;
-        forma = new Retangulo(2,3);
+        
+        forma = new Retangulo(2, 3);
         System.out.println(forma.area());
         forma = new Quadrado(2);
         System.out.println(forma.area());
-        forma = new Triangulo(3,7);
+        forma = new Triangulo(3, 7);
         System.out.println(forma.area());
         
     }
