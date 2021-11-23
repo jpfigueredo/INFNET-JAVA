@@ -30,7 +30,7 @@ public class AlunoTeste {
         System.out.println("-----------------------------------");
         System.out.println(" ");
     }
-
+    
     private static double calcularMedia(int index){
             return (av2[index] + av1[index]) / 2;
     }

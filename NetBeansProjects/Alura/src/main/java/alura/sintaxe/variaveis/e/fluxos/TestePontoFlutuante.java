@@ -6,7 +6,7 @@ public class TestePontoFlutuante {
         // Não é recomendado criar variável não utilizada
         //ex:
         // double salario;
-        double salario = 1250.70;
+        double salario = (float)1250.70;
         
         System.out.println("meu salário é " + salario);
         

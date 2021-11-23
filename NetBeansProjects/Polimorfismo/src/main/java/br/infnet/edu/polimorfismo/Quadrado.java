@@ -1,6 +1,6 @@
 package br.infnet.edu.polimorfismo;
 
-public class Quadrado {
+public class Quadrado extends Forma{
     
     public Quadrado(int lado) {
         super(lado);

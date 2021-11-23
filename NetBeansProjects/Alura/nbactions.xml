@@ -7,13 +7,13 @@
             </packagings>
             <goals>
                 <goal>process-classes</goal>
-                <goal>org.codehaus.mojo:exec-maven-plugin:3.0.0:java</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:3.0.0:exec</goal>
             </goals>
             <properties>
                 <exec.vmArgs></exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
                 <exec.appArgs></exec.appArgs>
-                <exec.mainClass>br.infnet.edu.fdevjava_tp1.AlunoTeste</exec.mainClass>
+                <exec.mainClass>alura.orientacao.a.objeto.ByteBank</exec.mainClass>
                 <exec.executable>java</exec.executable>
             </properties>
         </action>
