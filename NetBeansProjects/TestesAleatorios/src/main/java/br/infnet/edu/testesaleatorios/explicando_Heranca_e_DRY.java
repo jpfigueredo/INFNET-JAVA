@@ -15,7 +15,7 @@ public class explicando_Heranca_e_DRY{
         //Seguro Veiculo
         private Veiculo veiculo;
         private double valorSeguro;
-        private double franquia
+        private double franquia;
 
         /* SE TORNA */
 
@@ -31,7 +31,7 @@ public class explicando_Heranca_e_DRY{
             private Funcionario funcionario;
             private Veiculo veiculo;
             private double valorSeguro;
-            private double franquia
+            private double franquia;
         }
 
         /* APLICANDO HERANÇA E DRY */
@@ -45,7 +45,7 @@ public class explicando_Heranca_e_DRY{
         class SeguroVeiculo extends Servico{
             private Veiculo veiculo;
             private double valorSeguro;
-            private double franquia
+            private double franquia;
         }
         // Agora podemos utilizar os atributos de Serviço
     }

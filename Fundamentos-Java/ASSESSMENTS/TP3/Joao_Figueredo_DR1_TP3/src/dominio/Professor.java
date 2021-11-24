@@ -35,7 +35,14 @@ public class Professor extends Pessoa{
 		listaMaterias = new ArrayList<String>();
 		
 		listaMaterias.add("Portugues"+"Matematica"+"Geografia"+"Historia"+"Fisica"+
-		         "Quimica"+"Biologia"+"Educação Fisica"+"Filosofia"+"Inglês"+"Java");
+		         "Quimica"+"Biologia"+"Educação Fisica"+"Filosofia"+"Inglês"+"Java");	
+		
+//		for(int i = 0; i < listaMaterias.size() ; i++) {
+//			if(!materia.equalsIgnoreCase(listaMaterias.get(i))) {
+//	    		throw new NomeIncompletoException("Matéria indisponível! "
+//	    				+ "\nSelecione uma das matérias: "+listaMaterias);
+//	    	}
+//		} Achar porque o equalsIgnoreCase está dando erro.
 		
 		for(int i = 0; i < listaMaterias.size() ; i++) {
 			if(materia != listaMaterias.get(i)) {

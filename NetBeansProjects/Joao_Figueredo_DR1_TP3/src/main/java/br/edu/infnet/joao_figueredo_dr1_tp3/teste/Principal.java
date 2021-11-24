@@ -1,50 +1,34 @@
-package main;
+package br.edu.infnet.joao_figueredo_dr1_tp3.teste;
 
-import java.util.ArrayList;
 import auxiliar.Constantes;
-import dominio.Aluno;
-import dominio.Professor;
-import exceptions.NomeIncompletoException;
-import exceptions.NumeroInvalidoException;
-
+import br.edu.infnet.joao_figueredo_dr1_tp3.testes.dominio.Aluno;
+import br.edu.infnet.joao_figueredo_dr1_tp3.testes.dominio.Professor;
+import java.util.List;
 import java.util.Scanner;
 
+/**
+ *
+ * @author wasabi
+ */
 public class Principal {
 
-    private static ArrayList<Aluno> listaAluno;
-    private static ArrayList<Professor> listaProfessor;
+    private static List<Aluno> listaAluno;
+    private static List<Professor> listaProf;
     private static int quantidadeAluno = 0;
     private static int quantidadeProfessor = 0;
+    private static List<Funcionario> listaFuncionario;
     
-    private static boolean verificaTamanhoId(int id) {
-        if(id < 0 || id > Constantes.quantidadeMaxima){
-            System.out.println("ERROR");
-            return true;
-        }
-        return false;
-    }
-    
-    
-    private static void imprimir(){
+    private static void impressao(){
             System.out.println("---- Listagem de Alunos e Professores ----");
-            System.out.println("");            
-            System.out.println("ALUNOS: ");            
-            for(Aluno aluno: listaAluno) {
-                System.out.println(aluno);
+            for(Funcionario func : listaFuncionario) {
+                    func.impressao();
             }
-            System.out.println("");
-            System.out.println("Professores: ");
-            for(Professor prof: listaProfessor) {
-            	System.out.println(prof);
-            }
-            System.out.println("");
             System.out.println("------------------------------------------");
     }
             
-    public static void main(String[] args) throws NomeIncompletoException, NumeroInvalidoException {
-
-    	listaProfessor = new ArrayList<Professor>();
-    	listaAluno = new ArrayList<Aluno>();
+    public static void main(String[] args) {
+        
+        listaFuncionario = new ArrayList<Funcionario>();
         
         int opcao = 0;
         
@@ -56,16 +40,17 @@ public class Principal {
             System.out.println("[3] Consulta Individual");
             System.out.println("[4] Consultar todos");
             System.out.println("[5] Sair");
-            System.out.print("Informa a Opção: ");
+            
             try{
                 opcao = Integer.valueOf(in.next());
             } catch (NumberFormatException e){
-                System.out.println("Opção Inválida!");
+                System.out.println("OpÃ§Ã£o InvÃ¡lida!");
                 opcao = 5;
             }
             
             switch(opcao){
                 case 1:
+                    //trocar if por try
                     if(quantidadeAluno < Constantes.quantidadeMaxima){
                         Aluno novoAluno = new Aluno();
                     
@@ -83,11 +68,11 @@ public class Principal {
                         
                         listaAluno.add(novoAluno);
                         
-                        novoAluno.impressao();
                         System.out.println(novoAluno);
+                        
                         quantidadeAluno++;
                     }else{
-                        System.out.println("Número máximo de alunos atingido!");
+                        System.out.println("NÃºmero mÃ¡ximo de alunos atingido!");
                     }
                     break;
                 case 2:
@@ -100,54 +85,62 @@ public class Principal {
                         System.out.println("Informe o sobrenome: ");
                         novoProf.setSobrenome(in.next());
 
-                        System.out.println("Informe a matéria que irá lecionar: ");
+                        System.out.println("Informe a matÃ©ria que irÃ¡ lecionar: ");
                         novoProf.setMateria(in.next());
                         
-                        listaProfessor.add(novoProf);
+                        listaProf.add(novoProf);
                         
+                        System.out.println(novoProf);
                         novoProf.impressao();
-                        
                         quantidadeProfessor++;
                     }else{
-                        System.out.println("Número máximo de professores atingido!");
+                        System.out.println("NÃºmero mÃ¡ximo de professores atingido!");
                     }
                     break;
                 case 3:
-                	System.out.println("[1] Aluno");
-                	System.out.println("[2] Professor");
-
-                	System.out.print("Informe o digito: ");
-                	int AlunoProf = in.nextInt();
-
-                	System.out.println("Informe o ID: ");
+                    System.out.println("Informe o ID: ");
                     int id = in.nextInt();
                     
-                    if(verificaTamanhoId(id)) {
-                    	break;
-                    }else {
-	                    if (AlunoProf == 1){
-	    					listaAluno.get(id).impressao();
-	                    }else if(AlunoProf == 2){
-	    					listaProfessor.get(id).impressao();
-	                    }else{
-	                        System.out.println("ERROR");
-	                    }                	
+                    if(id < 0 || id > Constantes.quantidadeMaxima){
+                        System.out.println("ERROR");
+                        break;
+                    }//tranformar em exception
+                    if (id == 1){
+                        System.out.println(); //aluno
+                    }else if(id == 2){
+                        System.out.println(); //professor
+                    }else{
+                        System.out.println("ERROR");
                     }
                     break;
                 case 4:
-                	imprimir();
+                    
+                    System.out.println("[1] Aluno");
+                    System.out.println("[2] Professor");
+                    opcao = in.nextInt();
+                    if(opcao == 1){
+                        int quantidadeDeIDS = Aluno.getIndexID();
+                        System.out.println("LISTA DE ALUNOS: ");
+                        for(int i = 0; i<= quantidadeDeIDS.length(); i++){
+                            Aluno.impressao();                          
+                        }
+                    }else if(opcao == 2){
+                        System.out.println("LISTA DE PROFESSORES: ");
+                        Professor.impressao();
+                    }
+//                   print (aluno ou professor?)
+//                    if aluno, impressao aluno
+//                    if professor, impressao professor
                     break;
                 case 5:
                     System.out.println("Saindo!");
                     break;
                 default:                    
-                    System.out.println("Opção Inválida!");
+                    System.out.println("OpÃ§Ã£o InvÃ¡lida!");
                     break;
             }
         }while(opcao != 5);
-        in.close();
         
-        System.out.println("Processamento finalizado!");
     }
     
 }
