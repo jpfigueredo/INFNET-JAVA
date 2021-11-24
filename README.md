@@ -11,7 +11,7 @@ Course focus:
 - Java Certification OCA 1Z0-808
 
 </h3>
-<img src="../javaRoadmap.png"/>
+<img src="https://github.com/w4sabi/INFNET-JAVA/blob/main/javaRoadmap.png?raw=true"/>
 <p>
 Files will be added to the repository upon learning evolution.
 </p>
