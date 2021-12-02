@@ -1,0 +1,11 @@
+package model.testes;
+
+import model.domain.Pedido;
+
+public class PedidoTeste {
+	public static void main(String[] args) {
+		
+		Pedido pedido = new Pedido();
+		System.out.println(pedido);
+	}
+}

@@ -1,0 +1,18 @@
+package model.testes;
+
+import model.domain.Solicitante;
+
+public class SolicitanteTeste {
+	public static void main(String[] args) {
+		
+//		instancie
+		
+		Solicitante solicitante = new Solicitante();
+		
+		
+//		preencha
+
+//		exiba
+		
+	}
+}

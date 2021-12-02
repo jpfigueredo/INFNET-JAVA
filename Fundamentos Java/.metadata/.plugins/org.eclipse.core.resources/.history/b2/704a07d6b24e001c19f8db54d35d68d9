@@ -1,0 +1,15 @@
+package model.testes;
+
+import model.domain.Pedido;
+
+public class PedidoTeste {
+	public static void main(String[] args) {
+		
+		
+		
+		Pedido pedido = new Pedido();
+		pedido.setDescricao("Pedido do Jaozin");
+		pedido.setSolicitante();
+		System.out.println(pedido);
+	}
+}

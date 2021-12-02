@@ -1,0 +1,6 @@
+
+°
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çµí‘HÆRCRITICALZ
+CODE_SMELL
+x	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¡ÁŒ³HÈRMINORZ
+CODE_SMELL

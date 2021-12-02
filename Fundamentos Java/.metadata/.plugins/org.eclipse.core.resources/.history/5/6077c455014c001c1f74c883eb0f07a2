@@ -1,0 +1,35 @@
+package testes;
+
+import dominio.Aluno;
+import exceptions.NomeIncompletoException;
+
+public class AlunoTestes {
+	
+    public static void main(String[] args) {
+        
+        Aluno primeiroAluno = new Aluno();
+        try {
+	        primeiroAluno.setNome("Rodolfo");
+	        primeiroAluno.setSobrenome("D'Avila");
+	        primeiroAluno.setNotaAV1(5.5);
+	        primeiroAluno.setNotaAV2(7);
+		}catch(NomeIncompletoException  e) {
+			System.out.println(e.getMessage());
+		}
+        System.out.println(primeiroAluno);
+        System.out.println("");
+	    primeiroAluno.impressao();
+
+	    System.out.println("____________________________");
+	    System.out.println("");
+	    
+        Aluno segundoAluno = new Aluno();
+        segundoAluno.setNome("Matheuszin");
+        segundoAluno.setSobrenome("Do Berequenblack");
+        segundoAluno.setNotaAV1(9);
+        segundoAluno.setNotaAV2(10);
+        System.out.println(segundoAluno);
+	    System.out.println("");
+	    segundoAluno.impressao();
+    }
+}

@@ -1,0 +1,11 @@
+package model.testes;
+
+public class SolicitanteTeste {
+	public static void main(String[] args) {
+		
+		//instancie
+//		preencha
+//		exiba
+		
+	}
+}

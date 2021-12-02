@@ -1,0 +1,80 @@
+package dominio;
+
+import exceptions.NumeroInvalidoException;
+
+public class Aluno extends Pessoa{
+    
+    private double notaAV1;
+    private double notaAV2;
+    private double media;
+    private static int indexID;
+
+    public Aluno() {
+        this.setId(indexID++);
+        this.notaAV1 = 0;
+        this.notaAV2 = 0;
+        this.media = 0;
+    }
+    
+    public Aluno(String nome, String sobrenome) {
+        super(nome, sobrenome);
+    }
+    
+    public Aluno(String nome, String sobrenome, double av1, double av2) {
+        super(nome, sobrenome);
+        this.notaAV1 = av1;
+        this.notaAV2 = av2;
+    }
+    
+    protected double calculaMedia(){
+        media = ((this.notaAV1+this.notaAV2)/2);
+        return media;
+    }
+    
+    public boolean verificaNome() {
+    	if(!(this.getNome() == "Pedro")) {
+    		return true;
+    	}
+    	return false;
+    }
+    
+    public boolean verificaSobrenome() {
+    	if(!(this.getSobrenome() == "Martins")) {
+    		return true;
+    	}
+    	return false;
+    }
+    
+    public double getNotaAV1() {
+        return notaAV1;
+    }
+
+    public void setNotaAV1(double notaAV1) throws NumeroInvalidoException{
+    	if(notaAV1 > 10 || notaAV1 < 0) {
+    		throw new NumeroInvalidoException("Nota somente de 0 à 10!");
+    	}
+        this.notaAV1 = notaAV1;
+    }
+	
+    public double getNotaAV2() {
+        return notaAV2;
+    }
+
+    public void setNotaAV2(double notaAV2) {
+        this.notaAV2 = notaAV2;
+    }
+
+    public static int getIndexID() {
+        return indexID;
+    }
+
+    @Override
+    public String toString() {
+    	// TODO Auto-generated method stub
+    	return super.toString()+
+    			"\nNota AV1: "+this.notaAV1+
+    			"NotaAV2: "+this.notaAV2+
+    			"Média: "+calculaMedia();
+    }
+    
+}

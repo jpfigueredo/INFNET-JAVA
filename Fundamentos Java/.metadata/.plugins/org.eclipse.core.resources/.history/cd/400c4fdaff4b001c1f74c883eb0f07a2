@@ -1,0 +1,9 @@
+package exceptions;
+
+public class TamanhoNomeException extends Exception{
+	private static final long serialVersionUID = 1L;
+
+	public TamanhoNomeException(String mensagem) {
+		super(mensagem);
+	}	
+}

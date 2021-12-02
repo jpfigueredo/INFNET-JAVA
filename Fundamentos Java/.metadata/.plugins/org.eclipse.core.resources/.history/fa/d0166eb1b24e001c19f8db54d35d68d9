@@ -1,0 +1,9 @@
+package model.testes;
+
+public class PedidoTeste {
+	public static void main(String[] args) {
+		
+		Pedido pedido = new Pedido();
+		System.out.println(pedido);
+	}
+}

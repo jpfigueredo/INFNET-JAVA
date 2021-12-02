@@ -1,0 +1,21 @@
+package testes;
+
+import dominio.Professor;
+
+public class ProfessorTeste {
+	
+    Professor primeiroProf = new Professor();
+    primeiroProf.setNome("Rodolfo");
+    primeiroProf.setSobrenome("D'Avila");
+    primeiroProf.setNotaAV1(5.5);
+    primeiroProf.setNotaAV2(7);
+    System.out.println(primeiroAluno);
+    
+    Aluno segundoProf = new Aluno();
+    segundoProf.setNome("Matheuszin");
+    segundoProf.setSobrenome("Do Berequenblack");
+    segundoProf.setNotaAV1(9);
+    segundoProf .setNotaAV2(10);
+    System.out.println(segundoAluno);
+    
+}

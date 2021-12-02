@@ -1,0 +1,72 @@
+package testes;
+
+import dominio.Aluno;
+import dominio.Pessoa;
+import dominio.Professor;
+import exceptions.NomeIncompletoException;
+import exceptions.NumeroInvalidoException;
+import exceptions.TamanhoNomeException;
+
+public class PessoaTeste {
+	public static void main(String[] args) {
+	
+		Aluno a1 = new Aluno("joao", "fig");
+		a1.setNotaAV1(5.5);
+		a1.setNotaAV2(7);
+		
+		Aluno a2 = new Aluno();
+		a2.setNotaAV1(6);
+		a2.setNotaAV2(10);
+		a2.setNome("maria");
+		a2.setSobrenome("lola");
+	
+		Aluno a3 = new Aluno("lauro", "mauro", 7, 10);
+
+
+		
+		Professor p1 = new Professor();
+		p1.setNome("lola");
+		p1.setSobrenome("luli");
+		p1.setMateria("Matematica");
+		
+		Professor p2 = new Professor("Manoel", "Silveira","Filosofia");
+		p2.setFullStack(true);
+		p2.setLinguagem("jAvA");
+		p2.setSalario(5000);
+	
+		try {
+			Aluno a1 = new Aluno("joao", "fig");
+			a1.setNotaAV1(200);
+			a1.setNotaAV2(30);
+			p1.impressao();
+		} catch (NomeIncompletoException | NumeroInvalidoException e) {
+			System.out.println(e.getMessage());
+		}
+	
+		System.out.println("------------");
+		
+		try {
+			Pessoa p3 = new Pessoa();
+			p3.setNome("Professor");
+			p3.setSobrenome("Xavier");
+			p3.impressao();
+		} catch (NomeIncompletoException | NumeroInvalidoException | TamanhoNomeException e) {
+			System.out.println(e.getMessage());
+		}
+	
+		System.out.println("------------");
+	
+		try {
+			Pessoa p2 = new Pessoa();
+			p2.setNome("Elberth moraes");
+			p2.setFaturamento(200);
+			p2.setFuncionarios(funcionarios);
+			p2.impressao();
+		} catch (NomeIncompletoException | NumeroInvalidoException | TamanhoNomeException e) {
+			System.out.println(e.getMessage());
+		}
+	
+		System.out.println("------------");
+
+	}
+}

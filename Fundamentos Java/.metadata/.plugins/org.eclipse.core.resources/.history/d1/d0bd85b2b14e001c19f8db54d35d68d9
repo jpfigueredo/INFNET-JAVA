@@ -1,0 +1,11 @@
+package model.domain;
+
+import java.time.LocalDateTime;
+
+public class Pedido {
+	
+	private String descricao;
+	private LocalDateTime data;
+	private Solicitante solicitante;
+	
+}

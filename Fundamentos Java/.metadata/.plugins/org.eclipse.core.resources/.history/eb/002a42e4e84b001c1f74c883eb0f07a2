@@ -1,0 +1,10 @@
+package exceptions;
+
+public class NumeroInvalidoException {
+	
+	private static final long serialVersionUID = 1L;
+
+	public NomeIncompletoException(String mensagem) {
+		super(mensagem);
+	}	
+}

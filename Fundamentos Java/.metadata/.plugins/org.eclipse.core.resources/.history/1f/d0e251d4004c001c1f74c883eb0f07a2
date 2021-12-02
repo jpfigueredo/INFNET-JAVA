@@ -1,0 +1,161 @@
+package dominio;
+
+import java.util.List;
+
+import exceptions.AusenciaFuncionarioException;
+import exceptions.FaturamentoNegativoException;
+import exceptions.NomeIncompletoException;
+
+public class Escola {
+	
+	private String nome;
+	private String sobrenome;
+	private String ultimoNome;
+	private double media;
+	private double AV1;	
+	private double AV2;
+	private List<Pessoa> pessoas;
+	
+	private int qtdeFuncionarios;
+	
+	
+//	private float calcularValorFolhaPagamento(){
+//	
+//	float valor = 0;
+//	
+//	for(Pessoa pessoa : pessoas) {
+//		valor = valor + pessoa.calcularSalarioLiquido();
+//		qtdeFuncionarios++;
+//	}
+//
+//	return valor;
+//}
+//
+//public void impressao() throws AusenciaFuncionarioException {
+//	
+//	if(funcionarios == null) {
+//		throw new AusenciaFuncionarioException("É obrigatório a associação de funcionários!!!");
+//	}
+//	
+//	float valorFolhaPagamento = calcularValorFolhaPagamento();
+//	
+//	System.out.println("Empresa "+ getNome() +" cadastrada com sucesso!!!");
+//	System.out.println("Faturamento: " + faturamento);
+//	System.out.println("Quantidade de funcionários: " + qtdeFuncionarios);
+//	System.out.println("Folha de pagamento dos funcionários: " + valorFolhaPagamento);
+//
+//	System.out.println("Funcionários: ");
+//	for (Funcionario funcionario : funcionarios) {
+//		System.out.println(funcionario);
+//	}			
+//}
+//
+//public String getNome() {
+//	
+//	StringBuilder sb = new StringBuilder();
+//	
+//	sb.append(this.ultimoNome.toUpperCase().charAt(0));
+//	sb.append("., ");
+//	sb.append(this.nome.toUpperCase());
+//	sb.append(" ");
+//	sb.append(this.sobrenome.toLowerCase());
+//
+//	return sb.toString();
+//}
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getSobrenome() {
+		return sobrenome;
+	}
+
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome;
+	}
+
+	public String getUltimoNome() {
+		return ultimoNome;
+	}
+
+	public void setUltimoNome(String ultimoNome) {
+		this.ultimoNome = ultimoNome;
+	}
+
+	public double getMedia() {
+		return media;
+	}
+
+	public void setMedia(double media) {
+		this.media = media;
+	}
+
+	public double getAV1() {
+		return AV1;
+	}
+
+	public void setAV1(double aV1) {
+		AV1 = aV1;
+	}
+
+	public double getAV2() {
+		return AV2;
+	}
+
+	public void setAV2(double aV2) {
+		AV2 = aV2;
+	}
+
+	public List<Pessoa> getPessoas() {
+		return pessoas;
+	}
+
+	public void setPessoas(List<Pessoa> pessoas) {
+		this.pessoas = pessoas;
+	}
+
+	public int getQtdeFuncionarios() {
+		return qtdeFuncionarios;
+	}
+
+	public void setQtdeFuncionarios(int qtdeFuncionarios) {
+		this.qtdeFuncionarios = qtdeFuncionarios;
+	}
+	
+//	
+//	public void setNome(String nome) throws NomeIncompletoException {
+//		
+//		int posIni = nome.indexOf(" ");
+//		int posFim = nome.lastIndexOf(" ");
+//		
+//		if(posIni <= 0 && posFim <= 0) {
+//			throw new NomeIncompletoException("O preenchimento do campo 'nome' está incorreto: "+nome+"!!!");
+//		}
+//		
+//		this.nome = nome.substring(0, posIni);
+//		this.sobrenome = nome.substring(posIni, posFim).trim();
+//		this.ultimoNome = nome.substring(posFim).trim();
+//	}
+//
+//	public float getFaturamento() {
+//		return faturamento;
+//	}
+//	public void setFaturamento(float faturamento) throws FaturamentoNegativoException {
+//		
+//		if(faturamento < 0) {
+//			throw new FaturamentoNegativoException("O faturamento da empresa não pode ser negativo!");
+//		}
+//		
+//		this.faturamento = faturamento;
+//	}
+//	public List<Funcionario> getFuncionarios() {
+//		return funcionarios;
+//	}
+//	public void setFuncionarios(List<Funcionario> funcionarios) {
+//		this.funcionarios = funcionarios;
+//	}
+}

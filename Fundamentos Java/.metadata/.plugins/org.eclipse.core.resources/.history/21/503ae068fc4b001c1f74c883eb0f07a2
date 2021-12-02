@@ -1,0 +1,34 @@
+package testes;
+
+import dominio.Aluno;
+import dominio.Pessoa;
+import dominio.Professor;
+
+public class PessoaTeste {
+	public static void main(String[] args) {
+	
+		Aluno a1 = new Aluno("joao", "fig");
+		a1.setNotaAV1(200);
+		a1.setNotaAV2(30);
+		
+		Aluno a2 = new Aluno();
+		a2.setNotaAV1(200);
+		a2.setNotaAV2(30);
+		a2.setNome("maria");
+		a2.setSobrenome("lola");
+	
+		Aluno a3 = new Aluno("lauro", "mauro", 7, 10);
+
+		
+		Professor p1 = new Professor();
+		p1.setNome("lola");
+		p1.setSobrenome("luli");
+		p1.setMateria("Matematica");
+		
+		Professor p2 = new Professor("Manoel", "Silveira","Filosofia");
+		p2.setFullStack(true);
+		p2.setLinguagem("jAvA");
+		p2.setSalario(5000);
+
+	}
+}

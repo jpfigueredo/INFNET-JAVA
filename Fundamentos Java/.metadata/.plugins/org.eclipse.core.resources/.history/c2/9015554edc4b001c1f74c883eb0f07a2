@@ -1,0 +1,68 @@
+package dominio;
+
+public class Pessoa {
+	private int id;
+	private String nome;
+	protected String sobrenome;
+	private static int indexID;
+	
+	public Pessoa() {
+		this.setId(indexID++);
+		this.nome = ("John");
+		this.sobrenome = ("Doe");
+	}
+	
+	public Pessoa(String nome, String sobrenome) {
+		this();
+		this.nome = nome;
+		this.sobrenome = sobrenome;
+	}
+	
+	
+	public String obterStringSalarioPorFuncionario(){
+		StringBuilder sb = new StringBuilder();
+				
+		sb.append(this.getNome());
+		sb.append(";");
+		sb.append("\r\n");
+
+		return sb.toString();
+	}
+	
+	public void impressao(){
+		System.out.println("ID: "+this.getId());
+		System.out.println("Nome: " +nome);
+		System.out.println("Sobrenome: " +sobrenome);
+	}
+		
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome.trim();
+	}
+
+	public String getSobrenome() {
+		return sobrenome;
+	}
+
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome.trim();
+	}
+	
+	@Override
+	public String toString() {
+        return ("Nome: "+this.nome+
+                "\nSobrenome: "+this.sobrenome);	
+    }
+	
+}

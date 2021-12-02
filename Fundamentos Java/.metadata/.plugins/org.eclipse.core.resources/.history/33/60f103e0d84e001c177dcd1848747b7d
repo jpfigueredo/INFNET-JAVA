@@ -1,0 +1,9 @@
+package domain;
+
+public class controleBonificacao {
+	
+	private Funcionario func;
+	private double soma;
+	
+	
+}

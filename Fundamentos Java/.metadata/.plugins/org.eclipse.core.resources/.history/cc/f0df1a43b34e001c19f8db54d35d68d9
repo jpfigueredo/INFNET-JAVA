@@ -1,0 +1,43 @@
+package model.domain;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class Pedido {
+	
+	private String descricao;
+	private LocalDateTime data;
+	private Solicitante solicitante;
+	
+	public Pedido() {
+		this.descricao = "Insira a descrição";
+		this.data = LocalDateTime.now();
+	}
+
+	@Override
+	public String toString() {
+		
+		DateTimeFormatter formatacao = null;
+		
+		return String.format("%s ; %s ; %s",
+				this.descricao,
+				this.data,
+				this.solicitante);
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+	public Solicitante getSolicitante() {
+		return solicitante;
+	}
+	public void setSolicitante(Solicitante solicitante) {
+		this.solicitante = solicitante;
+	}
+	public LocalDateTime getData() {
+		return data;
+	}
+}

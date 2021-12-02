@@ -1,0 +1,9 @@
+
+x	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡HôRMINORZ
+CODE_SMELL
+\
+java:S1128")Remove this unused import 'java.io.File'.(†Ð¥Å8ô“ýèÕ/HõRMINORZ
+CODE_SMELL
+n
+java:S2094"BRemove this empty class, write its code or make it an "interface".(·š†‡H÷RMINORZ
+CODE_SMELL

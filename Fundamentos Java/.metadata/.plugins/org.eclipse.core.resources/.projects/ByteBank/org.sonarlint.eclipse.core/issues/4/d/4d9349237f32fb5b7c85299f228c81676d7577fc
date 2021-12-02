@@ -1,0 +1,9 @@
+
+n	java:S125
+"<This block of commented-out lines of code should be removed.(¾Ÿ¼ù8Èç¯éÕ/H¯RMAJORZ
+CODE_SMELL
+Z
+java:S1068"(Remove this unused "func" private field.(´ü„M8øå•éÕ/HûRMAJORZ
+CODE_SMELL
+}	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.( Æ´ùÿÿÿÿHùRMINORZ
+CODE_SMELL

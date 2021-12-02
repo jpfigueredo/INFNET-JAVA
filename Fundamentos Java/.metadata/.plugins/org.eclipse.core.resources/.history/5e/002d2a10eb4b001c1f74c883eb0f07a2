@@ -1,0 +1,33 @@
+package dominio;
+
+public class Professor extends Pessoa{
+	
+    private String materia;
+    private static int indexID;
+    
+    public Professor(){
+		this.setId(indexID++);
+		this.setNome("Joao");
+		this.setSobrenome("Figueredo");
+		this.setMateria("Java");
+    }
+    
+    public Professor(String nome, String sobrenome, String materia){
+    	super(nome, sobrenome);
+        this.materia = materia;
+    }
+
+	public String getMateria() {
+		return materia;
+	}
+
+	public void setMateria(String materia) {
+		this.materia = materia;
+	}
+
+	public static int getIndexID() {
+		return indexID;
+	}
+
+}
+
