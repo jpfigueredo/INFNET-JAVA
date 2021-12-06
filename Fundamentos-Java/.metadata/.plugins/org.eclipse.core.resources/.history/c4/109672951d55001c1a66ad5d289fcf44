@@ -1,0 +1,81 @@
+package features;
+
+public class Knowledges {
+	
+	private int bureaucracy;
+	private int computer;
+	private int finance;
+	private int investigation;
+	private int law;
+	private int linguistics;
+	private int medicine;
+	private int occuult;
+	private int politics;
+	private int science;
+	
+	
+	
+	public int getBureaucracy() {
+		return bureaucracy;
+	}
+	public void setBureaucracy(int bureaucracy) {
+		this.bureaucracy = bureaucracy;
+	}
+	public int getComputer() {
+		return computer;
+	}
+	public void setComputer(int computer) {
+		this.computer = computer;
+	}
+	public int getFinance() {
+		return finance;
+	}
+	public void setFinance(int finance) {
+		this.finance = finance;
+	}
+	public int getInvestigation() {
+		return investigation;
+	}
+	public void setInvestigation(int investigation) {
+		this.investigation = investigation;
+	}
+	public int getLaw() {
+		return law;
+	}
+	public void setLaw(int law) {
+		this.law = law;
+	}
+	public int getLinguistics() {
+		return linguistics;
+	}
+	public void setLinguistics(int linguistics) {
+		this.linguistics = linguistics;
+	}
+	public int getMedicine() {
+		return medicine;
+	}
+	public void setMedicine(int medicine) {
+		this.medicine = medicine;
+	}
+	public int getOccuult() {
+		return occuult;
+	}
+	public void setOccuult(int occuult) {
+		this.occuult = occuult;
+	}
+	public int getPolitics() {
+		return politics;
+	}
+	public void setPolitics(int politics) {
+		this.politics = politics;
+	}
+	public int getScience() {
+		return science;
+	}
+	public void setScience(int science) {
+		this.science = science;
+	}
+	
+	
+
+}

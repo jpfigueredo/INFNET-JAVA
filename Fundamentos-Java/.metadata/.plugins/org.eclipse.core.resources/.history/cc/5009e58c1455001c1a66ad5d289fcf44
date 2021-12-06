@@ -1,0 +1,38 @@
+package model;
+
+import exception.InvalidEmailException;
+import exception.InvalidNameException;
+
+public class User {
+	String name;
+	String email;
+	
+	public User(String name, String email) throws InvalidNameException, InvalidEmailException {
+		
+		if(name == null) {throw new InvalidNameException("Name cannot be null.");}
+		if(email == null) {throw new InvalidEmailException("Email cannot be null.");}
+		
+		this.name = name;
+		this.email = email;
+	}
+	
+	public User() {}
+	
+	public String getName() {
+		return name;
+	}
+	public String getEmail() {
+		return email;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append(name);
+		sb.append(" ; ");		
+		sb.append(email);
+		
+		return sb.toString();
+	}
+}

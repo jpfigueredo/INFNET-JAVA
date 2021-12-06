@@ -1,0 +1,43 @@
+1638469304811	Rename package 'dominio'
+1638469321507	Rename type 'fornecedores'
+1638469782860	Delete element
+1638469786276	Delete element
+1638469788241	Delete element
+1638469796976	Delete element
+1638469801119	Rename type 'Produtos'
+1638469998417	Copy package
+1638470005161	Delete element
+1638470022291	Delete element
+1638470044411	Copy package
+1638470047212	Delete element
+1638470050988	Delete element
+1638473409164	Rename type 'FornecedoresTeste'
+1638545356737	Rename type 'Cotacao'
+1638545361129	Rename type 'Produto'
+1638545473051	Rename type 'Conta'
+1638553274281	Rename type 'Conta'
+1638553318022	Rename type 'Ficha'
+1638553325197	Rename type 'Atributos'
+1638553329327	Rename type 'Habilidades'
+1638553344045	Rename type 'Vantagens'
+1638554192837	Rename method 'verificaClan'
+1638554204022	Rename method 'validaClan'
+1638554216345	Rename method 'clanValidation'
+1638554829205	Rename type 'Personagem'
+1638555079095	Rename type 'Atributes'
+1638555222552	Delete element
+1638556059933	Rename type 'CotacaoTeste'
+1638556444532	Rename type 'ProdutoTeste'
+1638557460975	Rename type 'Sheet'
+1638557799184	Rename type 'Skills'
+1638559290981	Rename type 'SheetTest'
+1638562587831	Rename type 'Expertises'
+1638627970698	Rename local variable 'qtdeProdutos'
+1638627990472	Rename local variable 'formatacao'
+1638631047797	Rename type 'Character'
+1638631766402	Encapsulate field 'isAlive'
+1638632817533	Rename field 'nature'
+1638633618148	Rename field 'Acting'
+1638633888309	Rename package 'interfaces'
+1638635136504	Encapsulate field 'disciplines'
+1638642049166	Copy compilation units

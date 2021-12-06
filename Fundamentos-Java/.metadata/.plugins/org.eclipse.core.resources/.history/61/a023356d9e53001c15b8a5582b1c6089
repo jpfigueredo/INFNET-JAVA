@@ -1,0 +1,11 @@
+package model;
+
+public class Produto {
+	
+	private String fornecedor;
+	
+	public void cadastrarProdutos(){}
+	
+	public void consultarCotacoesPorProduto() {}
+	
+}

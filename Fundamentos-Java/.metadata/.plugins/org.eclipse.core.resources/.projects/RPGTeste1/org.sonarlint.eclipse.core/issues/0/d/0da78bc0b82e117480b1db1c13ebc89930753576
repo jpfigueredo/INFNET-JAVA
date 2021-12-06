@@ -1,0 +1,7 @@
+
+¯
+java:S1130"}Remove the declaration of thrown exception 'exception.InvalidInputException', as it cannot be thrown from constructor's body.(Ï·ã8‘Û®²Ø/Hü&RMINORZ
+CODE_SMELL
+®
+java:S1130"|Remove the declaration of thrown exception 'exception.InvalidNameException', as it cannot be thrown from constructor's body.(Ï·ã8‘Û®²Ø/Hþ&RMINORZ
+CODE_SMELL

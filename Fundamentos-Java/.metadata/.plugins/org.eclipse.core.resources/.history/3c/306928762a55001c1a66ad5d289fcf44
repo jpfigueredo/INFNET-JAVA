@@ -1,0 +1,34 @@
+package testes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import exception.CharacterListNullException;
+import exception.InvalidInputException;
+import exception.InvalidNameException;
+import exception.InvalidUserException;
+import model.Abilities;
+import model.Advantages;
+import model.Characters;
+import model.Status;
+
+public class CharactersTest {
+	
+	List<List<Characters>> characterList = new ArrayList<List<Characters>>();
+	List<Characters> persona = new ArrayList<Characters>();
+	
+	try {
+		Characters("Amarildo", 15, "Lawfull", "Camarilla", 1);
+
+		
+
+		characterList.add(persona);
+		
+		System.out.println(persona);
+		System.out.println(characterList); 
+	
+	}catch (InvalidUserException | CharacterListNullException e){
+		
+	}
+//	try {}catch(){}
+}

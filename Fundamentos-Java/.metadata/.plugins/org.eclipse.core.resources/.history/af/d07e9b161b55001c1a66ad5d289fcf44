@@ -1,0 +1,10 @@
+package interfaces;
+
+import exception.InvalidInputException;
+import exception.InvalidNameException;
+import model.Abilities;
+
+public class Disciplines extends Abilities {
+
+	public Disciplines() {}
+}

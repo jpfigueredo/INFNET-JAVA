@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEU PAU</title>
+</head>
+<body>
+	<h1>Mini-mundo Biblioteca</h1>
+    <div>
+    	<p>O sistema a ser modelado tem como objetivo controlar os empréstimos e reservas de publicações das bibliotecas espalhadas por diversos setores de uma universidade. Podem surgir novas bibliotecas no campus, de acordo com o crescimento da universidade. É importante que o sistema guarde o nome e a localização de cada uma delas.
+    	</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+package interfaces;
+
+public interface Knowledges {
+	
+	public static final int bureaucracy = 0;
+	public static final int computer = 0;
+	public static final int finance = 0;
+	public static final int investigation = 0;
+	public static final int law = 0;
+	public static final int linguistics = 0;
+	public static final int medicine = 0;
+	public static final int occuult = 0;
+	public static final int politics = 0;
+	public static final int science = 0;
+
+}

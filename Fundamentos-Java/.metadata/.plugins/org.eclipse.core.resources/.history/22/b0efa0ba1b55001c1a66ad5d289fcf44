@@ -1,0 +1,18 @@
+package interfaces;
+
+public class Knowledges {
+	
+	private int bureaucracy;
+	private int computer;
+	private int finance;
+	private int investigation;
+	private int law;
+	private int linguistics;
+	private int medicine;
+	private int occuult;
+	private int politics;
+	private int science;
+	
+	
+
+}

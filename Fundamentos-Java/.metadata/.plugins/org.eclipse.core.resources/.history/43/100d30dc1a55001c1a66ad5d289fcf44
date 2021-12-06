@@ -1,0 +1,28 @@
+package interfaces;
+
+public class Virtues {
+	private int conscience;
+	private int selfControl;
+	private int courage;
+	
+	
+	public int getConscience() {
+		return conscience;
+	}
+	public void setConscience(int conscience) {
+		this.conscience = conscience;
+	}
+	public int getSelfControl() {
+		return selfControl;
+	}
+	public void setSelfControl(int selfControl) {
+		this.selfControl = selfControl;
+	}
+	public int getCourage() {
+		return courage;
+	}
+	public void setCourage(int courage) {
+		this.courage = courage;
+	}
+	
+}

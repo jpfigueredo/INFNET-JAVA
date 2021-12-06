@@ -1,0 +1,31 @@
+package features;
+
+public class Mental {
+	
+	private int perception;
+	private int intelligence;
+	private int wits;
+	
+	
+	
+	public int getPerception() {
+		return perception;
+	}
+	public void setPerception(int perception) {
+		this.perception = perception;
+	}
+	public int getIntelligence() {
+		return intelligence;
+	}
+	public void setIntelligence(int intelligence) {
+		this.intelligence = intelligence;
+	}
+	public int getWits() {
+		return wits;
+	}
+	public void setWits(int wits) {
+		this.wits = wits;
+	}
+
+	
+}

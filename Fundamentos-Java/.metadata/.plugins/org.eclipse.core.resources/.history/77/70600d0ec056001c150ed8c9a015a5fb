@@ -1,0 +1,69 @@
+package model;
+
+import exceptions.InvalidInputException;
+import exceptions.InvalidNameException;
+import exceptions.NumeroNegativoException;
+import exceptions.NumeroNuloException;
+import exceptions.SkillsInvalidasException;
+
+public class Guerreiro extends Personagem{
+
+	private int forca;
+	private int resistencia;
+	private int defesa;
+	private String meleeSkills;
+		
+	public Guerreiro(String nome, int level, int vida, int mana, int stamina) throws InvalidNameException, InvalidInputException {
+		super(nome, level, vida, mana, stamina);
+		
+		if(agilidade < 0 || dextreza < 0 || sorte < 0) {throw new NumeroNegativoException("Habilidades não podem ser negativas.");}
+		if(agilidade == 0 || dextreza == 0 || sorte == 0) {throw new NumeroNuloException("Habilidades não podem ser iguais à 0.");}
+		if(rangedSkills.isEmpty()) {throw new SkillsInvalidasException("Habilidades inválidas, insira uma habilidade.");}
+		
+	}
+
+	public int getForca() {
+		return forca;
+	}
+	public void setForca(int forca) {
+		this.forca = forca;
+	}
+	
+	public int getResistencia() {
+		return resistencia;
+	}
+	public void setResistencia(int resistencia) {
+		this.resistencia = resistencia;
+	}
+	
+	public int getDefesa() {
+		return defesa;
+	}
+	public void setDefesa(int defesa) {
+		this.defesa = defesa;
+	}
+	
+	public String getMeleeSkills() {
+		return meleeSkills;
+	}
+	public void setMeleeSkills(String meleeSkills) {
+		this.meleeSkills = meleeSkills;
+	}
+	
+	
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Guerreiro [forca=");
+		builder.append(forca);
+		builder.append(", resistencia=");
+		builder.append(resistencia);
+		builder.append(", defesa=");
+		builder.append(defesa);
+		builder.append(", meleeSkills=");
+		builder.append(meleeSkills);
+		builder.append("]");
+		return builder.toString();
+	}
+	
+}

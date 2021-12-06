@@ -1,0 +1,36 @@
+package model;
+
+public abstract class Atributos extends CharacterSheet{
+	
+//	private String fornecedor;
+	private String descricao;
+	private float valor;
+	private float peso;
+	
+	public Atributos(String descricao, float valor, float peso) {
+		this.descricao = descricao;
+		this.valor = valor;
+		this.peso = peso;
+	}
+	
+	public abstract float calcularValorVenda();
+	
+	
+	@Override
+	public String toString() {
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append(descricao);
+		sb.append(";");
+		sb.append(valor);
+		sb.append(";");
+		sb.append(peso);
+		
+		return sb.toString();
+	}
+	
+	public void cadastrarProdutos(){}
+	
+	public void consultarCotacoesPorProduto() {}
+	
+}

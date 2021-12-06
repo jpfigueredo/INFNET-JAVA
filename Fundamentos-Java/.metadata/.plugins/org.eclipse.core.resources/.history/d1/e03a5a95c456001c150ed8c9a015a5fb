@@ -1,0 +1,70 @@
+package model;
+
+import java.util.List;
+
+import exceptions.NumeroNegativoException;
+import exceptions.NumeroNuloException;
+import exceptions.SkillsInvalidasException;
+
+public class Mago extends Personagem{
+	
+	private int inteligencia;
+	private int sabedoria;
+	private int sorte;
+	private List<String> magias;
+		
+	public Mago(int inteligencia, int sabedoria, int sorte, List<String> magias) throws SkillsInvalidasException , NumeroNegativoException , NumeroNuloException{
+		super();
+		
+		if(inteligencia < 0 || sabedoria < 0 || sorte < 0) {throw new NumeroNegativoException("Habilidades não podem ser negativas.");}
+		if(inteligencia == 0 || sabedoria == 0 || sorte == 0) {throw new NumeroNuloException("Habilidades não podem ser iguais à 0.");}
+		if(magias.isEmpty()) {throw new SkillsInvalidasException("Habilidades inválidas, insira uma habilidade.");}
+		
+		this.inteligencia = inteligencia;
+		this.sabedoria = sabedoria;
+		this.sorte = sorte;
+		this.magias = magias;
+	}
+	
+	public int getInteligencia() {
+		return inteligencia;
+	}
+	public void setInteligencia(int inteligencia) {
+		this.inteligencia = inteligencia;
+	}
+	
+	public int getSabedoria() {
+		return sabedoria;
+	}
+	public void setSabedoria(int sabedoria) {
+		this.sabedoria = sabedoria;
+	}
+	public int getSorte() {
+		return sorte;
+	}
+	public void setSorte(int sorte) {
+		this.sorte = sorte;
+	}
+	public List<String> getMagias() {
+		return magias;
+	}
+	public void setMagias(List<String> magias) {
+		this.magias = magias;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Mago [inteligencia=");
+		builder.append(inteligencia);
+		builder.append(", sabedoria=");
+		builder.append(sabedoria);
+		builder.append(", sorte=");
+		builder.append(sorte);
+		builder.append(", magias=");
+		builder.append(magias);
+		builder.append("]");
+		return builder.toString();
+	}
+	 
+}

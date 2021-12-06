@@ -1,0 +1,59 @@
+package model;
+
+import exception.InvalidInputException;
+import exception.InvalidNameException;
+import features.Knowledges;
+import features.Skills;
+import features.Talents;
+
+public class Abilities extends Characters{
+
+	private Talents talents;
+	private Skills skills;
+	private Knowledges knowledges;
+	
+	public Abilities() {}
+	
+	public Abilities(Talents talents, Knowledges knowledges, Skills skills) throws InvalidInputException, InvalidNameException {
+		this.talents = talents;
+		this.knowledges = knowledges;
+		this.skills = skills;
+	}
+
+
+	public Talents getTalents() {
+		return talents;
+	}
+	public void setTalents(Talents talents) {
+		this.talents = talents;
+	}
+
+	public Skills getSkills() {
+		return skills;
+	}
+	public void setSkills(Skills skills) {
+		this.skills = skills;
+	}
+
+	public Knowledges getKnowledges() {
+		return knowledges;
+	}
+	public void setKnowledges(Knowledges knowledges) {
+		this.knowledges = knowledges;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append(super.toString());
+		sb.append("\n");
+		sb.append(talents.toString());
+		sb.append("\n");
+		sb.append(skills.toString());
+		sb.append("\n");
+		sb.append(knowledges.toString());
+
+		return sb.toString();
+	}
+}

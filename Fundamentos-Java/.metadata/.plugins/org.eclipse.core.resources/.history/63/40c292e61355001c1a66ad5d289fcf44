@@ -1,0 +1,7 @@
+package interfaces;
+
+public interface Virtues {
+	public static final int conscience = 0;
+	public static final int selfControl = 0;
+	public static final int courage = 0;
+}

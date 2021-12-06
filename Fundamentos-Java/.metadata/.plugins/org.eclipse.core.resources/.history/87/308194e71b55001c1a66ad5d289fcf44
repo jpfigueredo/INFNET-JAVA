@@ -1,0 +1,57 @@
+package model;
+
+import exception.InvalidInputException;
+import exception.InvalidNameException;
+import interfaces.Backgrounds;
+import interfaces.Disciplines;
+import interfaces.Virtues;
+
+public class Advantages extends Characters{
+
+	private Disciplines disciplines;
+	private Backgrounds backgrounds;
+	private Virtues virtues;
+	
+	public Advantages(Disciplines disciplines, Backgrounds backgrounds, Virtues virtues) throws InvalidInputException, InvalidNameException {
+		this.disciplines = disciplines;
+		this.backgrounds = backgrounds;
+		this.virtues = virtues;
+	}
+	
+	
+	public Disciplines getDisciplines() {
+		return disciplines;
+	}
+	public void setDisciplines(Disciplines disciplines) {
+		this.disciplines = disciplines;
+	}
+
+	public Backgrounds getBackgrounds() {
+		return backgrounds;
+	}
+	public void setBackgrounds(Backgrounds backgrounds) {
+		this.backgrounds = backgrounds;
+	}
+
+	public Virtues getVirtues() {
+		return virtues;
+	}
+	public void setVirtues(Virtues virtues) {
+		this.virtues = virtues;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append(" ; ");
+		sb.append(disciplines);		
+		sb.append(" ; ");
+		sb.append(backgrounds);
+		sb.append(" ; ");
+		sb.append(virtues);	
+
+		return sb.toString();
+	}
+
+}

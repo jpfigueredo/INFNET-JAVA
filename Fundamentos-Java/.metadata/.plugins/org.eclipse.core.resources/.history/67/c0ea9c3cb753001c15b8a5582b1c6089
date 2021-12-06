@@ -1,0 +1,11 @@
+
+public class SistemaInterno{
+	
+	private int senha = 2222;
+	
+
+	public double getBonificacao() {
+		System.out.println("Chamando o método bonificação do GERENTE!");
+		return this.getSalario();
+	}
+}

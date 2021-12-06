@@ -1,0 +1,15 @@
+package interfaces;
+
+import exception.InvalidInputException;
+import exception.InvalidNameException;
+import model.Abilities;
+
+public class Disciplines extends Abilities {
+
+	public Disciplines(Talents talents, Knowledges knowledges, Skills skills)
+			throws InvalidInputException, InvalidNameException {
+		super(talents, knowledges, skills);
+		// TODO Auto-generated constructor stub
+	}
+	
+}

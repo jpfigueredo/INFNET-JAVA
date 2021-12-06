@@ -1,0 +1,10 @@
+public class Gerente extends FuncionarioAutenticavel {
+	
+	private int senha;
+	
+	
+	@Override
+	public double getBonificacao() {
+	    return	super.getSalario() * 0.1 + super.getSalario();
+	}
+}

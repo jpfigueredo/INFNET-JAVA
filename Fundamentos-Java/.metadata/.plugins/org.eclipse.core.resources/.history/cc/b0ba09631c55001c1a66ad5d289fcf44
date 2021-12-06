@@ -1,0 +1,23 @@
+package features;
+
+import model.Abilities;
+
+public class Backgrounds extends Abilities {
+
+	private String backHistory;
+	
+	
+	public Backgrounds(String backHistory){}
+
+
+	public String getBackHistory() {
+		return backHistory;
+	}
+		
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		
+		return super.toString();
+	}	
+}

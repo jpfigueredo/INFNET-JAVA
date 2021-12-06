@@ -1,0 +1,10 @@
+package model;
+
+public class Ficha{
+	
+	private Personagem personagem;
+	private Equipmento equipamento;
+	private Usuario usuario;
+	
+	
+}

@@ -1,0 +1,68 @@
+package model;
+
+import exception.InvalidInputException;
+import exception.InvalidNameException;
+
+public class Status extends Characters{
+	
+	private int health;
+	private int mana;
+	private int willpower;
+	private String weakness;
+	private boolean isAlive;
+	
+	public Status(String name, int age, String nature, String clan, boolean isNPC, int health, int mana, int willpower, String weakness, boolean isAlive) throws InvalidInputException, InvalidNameException {
+		super(name, age, nature, clan, isNPC);
+		this.health = health;
+		this.mana = mana;
+		this.willpower = willpower;
+		this.weakness = weakness;
+		this.isAlive = isAlive;
+	}
+	
+	public String healthStatus() { return !isAlive ? "Character is Dead!" : 0; }
+	
+	
+	public int getHealth() {
+		return health;
+	}
+	public void setHealth(int health) {
+		this.health = health;
+	}
+
+	public int getMana() {
+		return mana;
+	}
+	public void setMana(int mana) {
+		this.mana = mana;
+	}
+
+	public int getWillpower() {
+		return willpower;
+	}
+	public void setWillpower(int willpower) {
+		this.willpower = willpower;
+	}
+
+	public String getWeakness() {
+		return weakness;
+	}
+	public void setWeakness(String weakness) {
+		this.weakness = weakness;
+	}
+
+	public boolean isAlive() {
+		return isAlive;
+	}
+	public void setAlive(boolean isAlive) {
+		this.isAlive = isAlive;
+	}
+
+	
+	@Override
+	public String Alignment() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

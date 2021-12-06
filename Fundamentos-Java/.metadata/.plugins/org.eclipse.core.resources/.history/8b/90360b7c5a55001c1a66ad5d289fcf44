@@ -1,0 +1,9 @@
+package interfaces;
+
+public interface ControleStatus {
+	
+	public double verificaVida();
+
+	public double verificaMana();
+	
+}

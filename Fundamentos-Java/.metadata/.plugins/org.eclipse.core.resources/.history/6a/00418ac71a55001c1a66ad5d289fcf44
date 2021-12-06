@@ -1,0 +1,8 @@
+package interfaces;
+
+public class Virtues {
+	private int conscience = 0;
+	private int selfControl = 0;
+	private int courage = 0;
+	
+}

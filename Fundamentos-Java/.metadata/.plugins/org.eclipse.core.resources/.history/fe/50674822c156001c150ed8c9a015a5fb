@@ -1,0 +1,52 @@
+package model;
+
+public class Equipamento {
+	private String armaPrincipal;
+	private String armaSecundaria;
+	private String roupas;
+
+	public Equipamento(String armaPrincipal, String armaSecundaria, String roupas) {
+		super();
+		this.armaPrincipal = armaPrincipal;
+		this.armaSecundaria = armaSecundaria;
+		this.roupas = roupas;
+	}
+
+	public String getArmaPrincipal() {
+		return armaPrincipal;
+	}
+
+	public void setArmaPrincipal(String armaPrincipal) {
+		this.armaPrincipal = armaPrincipal;
+	}
+
+	public String getArmaSecundaria() {
+		return armaSecundaria;
+	}
+
+	public void setArmaSecundaria(String armaSecundaria) {
+		this.armaSecundaria = armaSecundaria;
+	}
+
+	public String getRoupas() {
+		return roupas;
+	}
+
+	public void setRoupas(String roupas) {
+		this.roupas = roupas;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Equipamento [armaPrincipal=");
+		builder.append(armaPrincipal);
+		builder.append(", armaSecundaria=");
+		builder.append(armaSecundaria);
+		builder.append(", roupas=");
+		builder.append(roupas);
+		builder.append("]");
+		return builder.toString();
+	}
+
+}

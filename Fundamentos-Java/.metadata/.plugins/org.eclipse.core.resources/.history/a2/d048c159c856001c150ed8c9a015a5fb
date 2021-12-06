@@ -1,0 +1,72 @@
+package model;
+
+import java.time.LocalDateTime;
+
+public class Ficha{
+	
+	private Equipamento equipamento;
+	private Jogador jogador;
+	private List<Personagem> personagem;
+	private LocalDateTime data;
+	
+	public Ficha(Personagem personagem, Equipamento equipamento, Jogador jogador) {
+		this.personagem = personagem;
+		this.equipamento = equipamento;
+		this.jogador = jogador;
+		this.data = LocalDateTime.now();
+	}
+	
+	public String obterLinhaGravacaoArquivo() {
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append(personagem.toString());
+		sb.append(";");
+		sb.append(jogador.getNome());
+		sb.append(";");
+		sb.append(equipamento.size());
+		//TODO Criar um método que faça o cálculo do valor total do pedido
+//		sb.append(";");
+//		sb.append(valorTotalPedido);
+		sb.append("\r\n");
+		
+		return sb.toString();
+	}
+
+	public Personagem getPersonagem() {
+		return personagem;
+	}
+
+	public void setPersonagem(Personagem personagem) {
+		this.personagem = personagem;
+	}
+
+	public Equipamento getEquipamento() {
+		return equipamento;
+	}
+
+	public void setEquipamento(Equipamento equipamento) {
+		this.equipamento = equipamento;
+	}
+
+	public Jogador getJogador() {
+		return jogador;
+	}
+
+	public void setUsuario(Jogador jogador) {
+		this.jogador = jogador;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Ficha [personagem=");
+		builder.append(personagem);
+		builder.append(", equipamento=");
+		builder.append(equipamento);
+		builder.append(", usuario=");
+		builder.append(jogador);
+		builder.append("]");
+		return builder.toString();
+	}
+		
+}

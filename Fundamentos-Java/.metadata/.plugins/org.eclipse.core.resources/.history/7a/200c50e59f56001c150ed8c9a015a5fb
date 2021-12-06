@@ -1,0 +1,69 @@
+package model;
+
+import java.util.List;
+
+import exceptions.ArqueiroInvalidoException;
+import exceptions.InvalidNameException;
+import exceptions.NumeroNegativoException;
+import exceptions.NumeroNuloException;
+
+public class Arqueiro extends Personagem{
+	
+	private int agilidade;
+	private int dextreza;
+	private int sorte;
+	private List<String> rangedSkills;
+	
+	public Arqueiro(int agilidade, int dextreza, int sorte, List<String> rangedSkills) throws ArqueiroInvalidoException , NumeroNegativoException , NumeroNuloException{
+		
+		if(agilidade == 0 || agilidade < 0) {
+			throw new InvalidNameException("Agilidade inválida, insira um valor igual ou maior que 1.");
+		
+		super();
+		this.agilidade = agilidade;
+		this.dextreza = dextreza;
+		this.sorte = sorte;
+		this.rangedSkills = rangedSkills;
+	}
+	
+	public int getAgilidade() {
+		return agilidade;
+	}
+	public void setAgilidade(int agilidade) {
+		this.agilidade = agilidade;
+	}
+	public int getDextreza() {
+		return dextreza;
+	}
+	public void setDextreza(int dextreza) {
+		this.dextreza = dextreza;
+	}
+	public int getSorte() {
+		return sorte;
+	}
+	public void setSorte(int sorte) {
+		this.sorte = sorte;
+	}
+	public List<String> getRangedSkills() {
+		return rangedSkills;
+	}
+	public void setRangedSkills(List<String> rangedSkills) {
+		this.rangedSkills = rangedSkills;
+	}
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Arqueiro [agilidade=");
+		builder.append(agilidade);
+		builder.append(", dextreza=");
+		builder.append(dextreza);
+		builder.append(", sorte=");
+		builder.append(sorte);
+		builder.append(", rangedSkills=");
+		builder.append(rangedSkills);
+		builder.append("]");
+		return builder.toString();
+	}
+
+	
+}

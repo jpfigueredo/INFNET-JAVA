@@ -1,0 +1,14 @@
+package interfaces;
+
+public interface Talents {
+	public static final int Acting = 0;
+	public static final int alertness = 0;
+	public static final int athletics = 0;
+	public static final int brawl = 0;
+	public static final int dodge = 0;
+	public static final int empathy = 0;
+	public static final int intimidation = 0;
+	public static final int leadership = 0;
+	public static final int streetwise = 0;
+	public static final int subterfuge = 0;
+}

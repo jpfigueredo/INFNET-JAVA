@@ -1,0 +1,53 @@
+package teste;
+
+public class FornecedoresTeste {
+	public static void main(String[] args) {
+		
+	}
+}
+/*
+	A empresa ACME necessita facilitar e controlar suas compras: de material de limpeza, 
+	material de escritório até móveis e utensílios. Todos os itens da empresa (Produto) 
+	deverão passar por um sistema que registre as tomadas de preços que são feitas por Internet, 
+	telefone, jornais etc (Cotação).
+	Sua tarefa é implementar os módulos de cadastro de Produtos e Cotações. 
+	Não é para implementar nada além desses dois módulos.
+
+	Segue abaixo a lista de itens que deverão fazer parte do seu projeto:
+
+	Geral:
+	Diretório com o projeto Maven, incluindo o pom.xml.
+	Diretório “setup�? contendo:
+	Script SQL do banco de dados MySQL para criação das tabelas.
+	Script SQL do banco de dados para inserção de registros de teste (produtos e cotações).
+	Arquivo README.txt com instruções para fazer o sistema funcionar.
+	Planilha de exemplo com dados exportados pelo sistema.
+	Todas as classes deverão estar contidas nos seus respectivos pacotes, 
+	conforme o diagrama de classes fornecido.
+	
+	Todos os pacotes deverão ter br.edu.infnet como prefixo.
+	GUI:
+	As telas deverão ser implementadas com as bibliotecas AWT e/ou Swing. Nenhuma funcionalidade deverá ser executada na console.
+	Os dados de entrada deverão ser validados adequadamente e as mensagens de erro deverão ser claras e objetivas. Todas as mensagens deverão ter ícones adequados.
+	Os dados de entrada deverão usar máscaras sempre que possível.
+	Todos os dados de datas e moeda que aparecem na tela deverão aparecer formatados no padrão brasileiro.
+	Classes de Acesso ao Banco de Dados:
+	Implementar classe responsável pela abertura de conexões com o banco de dados.
+	Os parâmetros de conexões deverão ser armazenados em um arquivo properties que será colocado no classpath da aplicação.
+	As exceções dessa classe deverão ser propagadas para a GUI e o seu tratamento deverá implementar mensagens adequadas para o usuário.
+	Implementar todos os métodos de cadastro (CRUD), além dos necessários para o funcionamento do sistema. Implementar apenas o que for necessário para o funcionamento do sistema.
+	As exceções dessas classes deverão ser propagadas para a GUI e o seu tratamento deverá implementar mensagens adequadas para o usuário.
+	Os métodos dessas classes deverão usar try-with-resources corretamente, garantindo que todas as conexões serão fechadas.
+	Os métodos deverão seguir o padrão:
+	inserir.
+	alterar.
+	excluir.
+	obter(id) → consulta que retorna 1 registro pelo seu id.
+	obterPor… → para consultas que retornem 1 registro segundo um critério.
+	listar → retorna todos os registros.
+	listarPor… → retorna N registros segundo um critério.
+	Classes de negócio deverão conter construtores, setters e getters.
+	Boa Sorte!
+
+	Antes de fazer sua entrega, reúna todos os arquivos relativos ao seu Assessment (AT) em um único arquivo no formato .zip. Utilize seu próprio nome para nomear o arquivo, identificando também o teste correspondente, como no exemplo: Nome_sobrenome_DR1_AT.zip.
+*/

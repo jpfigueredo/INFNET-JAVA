@@ -1,0 +1,10 @@
+package interfaces;
+
+public class ControleStatus {
+	
+	public double verificaVida() {
+		return 0;};
+
+	public double verificaMana() {
+		return 0;};
+}

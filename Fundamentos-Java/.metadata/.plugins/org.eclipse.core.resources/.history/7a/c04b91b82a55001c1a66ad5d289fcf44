@@ -1,0 +1,19 @@
+package testes;
+
+import model.Characters;
+
+public class CharactersTest {
+	
+	public static void main(String[] args) {
+		
+		try {
+			Characters char1 = new Characters("Amarildo", 15, "Lawfull", "Camarilla", 1);
+			System.out.println(char1); 
+		
+		}catch (InvalidUserException | CharacterListNullException e){
+			
+		}
+		
+//	try {}catch(){}
+	}
+}

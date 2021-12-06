@@ -1,0 +1,22 @@
+1638670976865	Delete element
+1638671007532	Encapsulate field 'personagens'
+1638671252219	Rename type 'Ladino'
+1638671652078	Delete element
+1638672832911	Rename local variable 'prsng'
+1638800779171	Rename type 'ArqueiroInvalidoException'
+1638814274860	Rename compilation unit 'Usuario.java'
+1638814474890	Rename field 'usuario'
+1638814676686	Rename local variable 'arch'
+1638814679949	Rename local variable 'arch'
+1638814685028	Rename local variable 'arch'
+1638814693762	Rename local variable 'arch'
+1638814809448	Encapsulate field 'personagem'
+1638815527716	Rename type 'UsuarioTeste'
+1638815587151	Rename type 'CharacterListNullException'
+1638815615572	Delete element
+1638815867731	Move compilation unit
+1638815871623	Delete element
+1638816056919	Rename local variable 'personagem'
+1638816062033	Rename local variable 'personagem'
+1638816064527	Rename local variable 'skills'
+1638817016941	Copy packages

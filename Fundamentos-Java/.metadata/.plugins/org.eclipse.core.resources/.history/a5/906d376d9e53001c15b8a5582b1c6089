@@ -1,0 +1,16 @@
+package model;
+
+public class Cotacao {
+
+	public void cadastrarCotacoes() {}
+	
+	public void exportarCotacoes() {
+//		Exportar cotações é simplesmente criar um arquivo CSV 
+//		com os dados de cotações de um produto escolhido. 
+//		Esse arquivo CSV deverá ser testado por você, 
+//		importando-o no Excel, LibreOffice Calc ou similar, 
+//		a fim de garantir que aparecem corretamente na planilha.
+	}
+	
+	
+}

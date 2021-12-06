@@ -1,0 +1,8 @@
+
+¶
+java:S1186
+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Õî³T8–‚­±Ø/HàRCRITICALZ
+CODE_SMELL
+^
+java:S1068"+Remove this unused "history" private field.(ŒŸ¸¤8È¼¬±Ø/HÚRMAJORZ
+CODE_SMELL

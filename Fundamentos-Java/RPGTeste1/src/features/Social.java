@@ -1,0 +1,50 @@
+package features;
+
+import model.Attributes;
+
+public class Social extends Attributes{
+	
+	private int charisma;
+	private int manipulation;
+	private int appearance;
+	
+	public Social(int charisma, int manipulation, int appearance) {
+		super();
+		this.charisma = charisma;
+		this.manipulation = manipulation;
+		this.appearance = appearance;
+	}
+	
+	public int getCharisma() {
+		return charisma;
+	}
+	public void setCharisma(int charisma) {
+		this.charisma = charisma;
+	}
+	public int getManipulation() {
+		return manipulation;
+	}
+	public void setManipulation(int manipulation) {
+		this.manipulation = manipulation;
+	}
+	public int getAppearance() {
+		return appearance;
+	}
+	public void setAppearance(int appearance) {
+		this.appearance = appearance;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Social [charisma=");
+		builder.append(charisma);
+		builder.append(", manipulation=");
+		builder.append(manipulation);
+		builder.append(", appearance=");
+		builder.append(appearance);
+		builder.append("]");
+		return builder.toString();
+	}	
+	
+}

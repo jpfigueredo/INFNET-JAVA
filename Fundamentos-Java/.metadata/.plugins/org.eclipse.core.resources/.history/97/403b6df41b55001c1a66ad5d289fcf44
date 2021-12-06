@@ -1,0 +1,9 @@
+package features;
+
+public interface Social {
+	
+	public static final int charisma = 0;
+	public static final int manipulation = 0;
+	public static final int appearance = 0;
+	
+}

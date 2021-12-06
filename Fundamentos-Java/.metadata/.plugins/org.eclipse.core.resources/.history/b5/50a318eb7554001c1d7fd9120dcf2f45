@@ -1,0 +1,41 @@
+package model;
+
+import interfaces.Skills;
+import interfaces.Knowledges;
+import interfaces.Talents;
+
+public class Abilities extends Character implements Talents, Skills, Knowledges{
+
+	private Talents talents;
+	private Skills expertises;
+	private Knowledges knowledges;
+	
+	
+	public Abilities(User user, String name, int age, String nature, String clan, boolean isNPC) {
+		super(user, name, age, nature, clan, isNPC);
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public Talents getTalents() {
+		return talents;
+	}
+	public void setTalents(Talents talents) {
+		this.talents = talents;
+	}
+
+	public Skills getExpertises() {
+		return expertises;
+	}
+	public void setExpertises(Skills expertises) {
+		this.expertises = expertises;
+	}
+
+	public Knowledges getKnowledges() {
+		return knowledges;
+	}
+	public void setKnowledges(Knowledges knowledges) {
+		this.knowledges = knowledges;
+	}
+
+}

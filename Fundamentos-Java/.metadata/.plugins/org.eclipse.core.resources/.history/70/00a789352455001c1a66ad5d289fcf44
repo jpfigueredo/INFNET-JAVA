@@ -1,0 +1,126 @@
+package features;
+
+import model.Abilities;
+
+public class Talents extends Abilities{
+	
+	private int acting;
+	private int alertness;
+	private int athletics;
+	private int brawl;
+	private int dodge;
+	private int empathy;
+	private int intimidation;
+	private int leadership;
+	private int streetwise;
+	private int subterfuge;
+	
+	public Talents() {}	
+	
+	public Talents(int acting, int alertness, int athletics, int brawl, int dodge, int empathy, int intimidation,
+			int leadership, int streetwise, int subterfuge) {
+		this.acting = acting;
+		this.alertness = alertness;
+		this.athletics = athletics;
+		this.brawl = brawl;
+		this.dodge = dodge;
+		this.empathy = empathy;
+		this.intimidation = intimidation;
+		this.leadership = leadership;
+		this.streetwise = streetwise;
+		this.subterfuge = subterfuge;
+	}
+	
+	public int getActing() {
+		return acting;
+	}
+	public void setActing(int acting) {
+		this.acting = acting;
+	}
+	public int getAlertness() {
+		return alertness;
+	}
+	public void setAlertness(int alertness) {
+		this.alertness = alertness;
+	}
+	public int getAthletics() {
+		return athletics;
+	}
+	public void setAthletics(int athletics) {
+		this.athletics = athletics;
+	}
+	public int getBrawl() {
+		return brawl;
+	}
+	public void setBrawl(int brawl) {
+		this.brawl = brawl;
+	}
+	public int getDodge() {
+		return dodge;
+	}
+	public void setDodge(int dodge) {
+		this.dodge = dodge;
+	}
+	public int getEmpathy() {
+		return empathy;
+	}
+	public void setEmpathy(int empathy) {
+		this.empathy = empathy;
+	}
+	public int getIntimidation() {
+		return intimidation;
+	}
+	public void setIntimidation(int intimidation) {
+		this.intimidation = intimidation;
+	}
+	public int getLeadership() {
+		return leadership;
+	}
+	public void setLeadership(int leadership) {
+		this.leadership = leadership;
+	}
+	public int getStreetwise() {
+		return streetwise;
+	}
+	public void setStreetwise(int streetwise) {
+		this.streetwise = streetwise;
+	}
+	public int getSubterfuge() {
+		return subterfuge;
+	}
+	public void setSubterfuge(int subterfuge) {
+		this.subterfuge = subterfuge;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		
+		builder.append("Talents [acting=");
+		builder.append(acting);
+		builder.append(", alertness=");
+		builder.append(alertness);
+		builder.append(", athletics=");
+		builder.append(athletics);
+		builder.append(", brawl=");
+		builder.append(brawl);
+		builder.append(", dodge=");
+		builder.append(dodge);
+		builder.append(", empathy=");
+		builder.append(empathy);
+		builder.append(", intimidation=");
+		builder.append(intimidation);
+		builder.append(", leadership=");
+		builder.append(leadership);
+		builder.append(", streetwise=");
+		builder.append(streetwise);
+		builder.append(", subterfuge=");
+		builder.append(subterfuge);
+		builder.append("]");
+		
+		return builder.toString();
+	}
+
+	
+	
+}

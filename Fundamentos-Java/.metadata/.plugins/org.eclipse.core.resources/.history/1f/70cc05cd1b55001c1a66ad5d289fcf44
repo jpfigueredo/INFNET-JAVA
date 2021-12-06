@@ -1,0 +1,14 @@
+package interfaces;
+
+public interface Skills {
+	public static final int animalKen = 0;
+	public static final int drive = 0;
+	public static final int etiquette = 0;
+	public static final int firearms = 0;
+	public static final int melee = 0;
+	public static final int music = 0;
+	public static final int repair = 0;
+	public static final int security = 0;
+	public static final int stealth = 0;
+	public static final int survival = 0;
+}

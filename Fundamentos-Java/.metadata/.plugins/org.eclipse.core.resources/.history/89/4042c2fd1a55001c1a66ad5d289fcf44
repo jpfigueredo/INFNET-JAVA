@@ -1,0 +1,38 @@
+package interfaces;
+
+import exception.InvalidInputException;
+import exception.InvalidNameException;
+import model.Abilities;
+
+public class Virtues extends Abilities{
+
+	private int conscience;
+	private int selfControl;
+	private int courage;
+	
+	public Virtues(Talents talents, Knowledges knowledges, Skills skills)
+			throws InvalidInputException, InvalidNameException {
+		super(talents, knowledges, skills);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public int getConscience() {
+		return conscience;
+	}
+	public void setConscience(int conscience) {
+		this.conscience = conscience;
+	}
+	public int getSelfControl() {
+		return selfControl;
+	}
+	public void setSelfControl(int selfControl) {
+		this.selfControl = selfControl;
+	}
+	public int getCourage() {
+		return courage;
+	}
+	public void setCourage(int courage) {
+		this.courage = courage;
+	}
+	
+}

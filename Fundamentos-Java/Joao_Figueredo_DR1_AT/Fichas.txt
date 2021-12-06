@@ -1,0 +1,4 @@
+G;5;5;5
+A;10;10;10;"Oliver Queen";2000;1000;0;9999
+M;10;10;10;"Saradin";10;99;2000;100
+F;5;5;5;"felipe";20;"felipe@fe.lipe";"Espada Grande +3";"Prismatic Shield";"Ornate Chestplate"

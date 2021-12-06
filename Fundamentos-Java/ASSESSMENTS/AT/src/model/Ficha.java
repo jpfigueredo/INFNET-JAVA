@@ -1,0 +1,52 @@
+package model;
+
+public class Ficha{
+	
+	private Personagem personagem;
+	private Equipamento equipamento;
+	private Jogador jogador;
+	
+	public Ficha(Personagem personagem, Equipamento equipamento, Jogador jogador) {
+		this.personagem = personagem;
+		this.equipamento = equipamento;
+		this.jogador = jogador;
+	}
+
+	public Personagem getPersonagem() {
+		return personagem;
+	}
+
+	public void setPersonagem(Personagem personagem) {
+		this.personagem = personagem;
+	}
+
+	public Equipamento getEquipamento() {
+		return equipamento;
+	}
+
+	public void setEquipamento(Equipamento equipamento) {
+		this.equipamento = equipamento;
+	}
+
+	public Jogador getJogador() {
+		return jogador;
+	}
+
+	public void setUsuario(Jogador jogador) {
+		this.jogador = jogador;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Ficha [personagem=");
+		builder.append(personagem);
+		builder.append(", equipamento=");
+		builder.append(equipamento);
+		builder.append(", usuario=");
+		builder.append(jogador);
+		builder.append("]");
+		return builder.toString();
+	}
+		
+}

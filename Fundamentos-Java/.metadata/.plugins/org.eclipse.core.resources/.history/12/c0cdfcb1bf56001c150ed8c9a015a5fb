@@ -1,0 +1,52 @@
+package testes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import exceptions.NumeroNegativoException;
+import exceptions.NumeroNuloException;
+import exceptions.SkillsInvalidasException;
+import model.Arqueiro;
+import model.Mago;
+import model.Personagem;
+
+public class MagoTeste {
+	public static void main(String[] args) {
+		
+		try {
+			List<String> skills = new ArrayList<String>();
+			skills.add("atirar");
+			skills.add("esquivar");
+			
+			Personagem arch = new mago(5,5,5,skills);
+			
+			System.out.println(arch.toString());
+		}catch (SkillsInvalidasException | NumeroNegativoException | NumeroNuloException e){
+			System.out.println(e.getMessage());	
+		}
+		
+		try {
+			List<String> skills = new ArrayList<String>();
+			skills.add("");
+			
+			Personagem arch = new Arqueiro(-5,15,0,skills);
+			
+			System.out.println(arch.toString());
+		}catch (SkillsInvalidasException | NumeroNegativoException | NumeroNuloException e){
+			System.out.println(e.getMessage());	
+		}
+		
+		try {
+			List<String> skills = new ArrayList<String>();
+			skills.add("atirar");
+			skills.add("esquivar");
+			
+			Personagem arch = new Arqueiro(0,0,0,null);
+			
+			System.out.println(arch.toString());
+		}catch (SkillsInvalidasException | NumeroNegativoException | NumeroNuloException e){
+			System.out.println(e.getMessage());	
+		}
+		
+	}
+}

@@ -1,0 +1,13 @@
+package model;
+
+public class Advantages extends Character{
+
+	private 
+	
+	
+	public Advantages(User user, String name, String nature, String clan, boolean isNPC) {
+		super(user, name, nature, clan, isNPC);
+		// TODO Auto-generated constructor stub
+	}
+
+}

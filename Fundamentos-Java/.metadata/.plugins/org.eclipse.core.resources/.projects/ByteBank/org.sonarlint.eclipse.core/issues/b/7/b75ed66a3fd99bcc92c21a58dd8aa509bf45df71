@@ -1,0 +1,12 @@
+
+F
+java:S1220""Move this file to a named package.H­RMINORZ
+CODE_SMELL
+n
+java:S1854"6Remove this useless assignment to local variable "si".(ÇÚùÿÿÿÿ8œÎ¾è×/HÊRMAJORZ
+CODE_SMELL
+_
+java:S1481"'Remove this unused "si" local variable.(ÇÚùÿÿÿÿ8œÎ¾è×/HËRMINORZ
+CODE_SMELL
+s	java:S125"<This block of commented-out lines of code should be removed.(šñ¬Ëşÿÿÿÿ8œÎ¾è×/HÍRMAJORZ
+CODE_SMELL

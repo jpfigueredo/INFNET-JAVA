@@ -1,0 +1,50 @@
+package features;
+
+import model.Abilities;
+
+public class Virtues extends Abilities{
+
+	private int conscience;
+	private int selfControl;
+	private int courage;
+	
+	public Virtues(int conscience, int selfControl, int courage) {
+		super();
+		this.conscience = conscience;
+		this.selfControl = selfControl;
+		this.courage = courage;
+	}
+
+	public int getConscience() {
+		return conscience;
+	}
+	public void setConscience(int conscience) {
+		this.conscience = conscience;
+	}
+	public int getSelfControl() {
+		return selfControl;
+	}
+	public void setSelfControl(int selfControl) {
+		this.selfControl = selfControl;
+	}
+	public int getCourage() {
+		return courage;
+	}
+	public void setCourage(int courage) {
+		this.courage = courage;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Virtues [conscience=");
+		builder.append(conscience);
+		builder.append(", selfControl=");
+		builder.append(selfControl);
+		builder.append(", courage=");
+		builder.append(courage);
+		builder.append("]");
+		return builder.toString();
+	}
+	
+}

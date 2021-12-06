@@ -1,0 +1,17 @@
+package model;
+
+import java.util.List;
+
+public class Abilities extends Character{
+
+	private List<String> Talents;
+	private List<String> expertises;
+	private List<String> knowledges;
+	
+	
+	public Abilities(User user, String name, String nature, String clan, boolean isNPC) {
+		super(user, name, nature, clan, isNPC);
+		// TODO Auto-generated constructor stub
+	}
+
+}

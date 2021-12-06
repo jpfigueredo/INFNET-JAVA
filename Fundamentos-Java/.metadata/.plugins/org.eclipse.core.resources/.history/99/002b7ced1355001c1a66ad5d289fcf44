@@ -1,0 +1,53 @@
+package model;
+
+import exception.InvalidInputException;
+import exception.InvalidNameException;
+import interfaces.Backgrounds;
+import interfaces.Disciplines;
+import interfaces.Virtues;
+
+public class Advantages extends Character implements Disciplines, Backgrounds, Virtues{
+
+	private Disciplines disciplines;
+	private Backgrounds backgrounds;
+	private Virtues virtues;
+	
+	public Advantages(User user, String name, int age, String nature, String clan, boolean isNPC) throws InvalidInputException, InvalidNameException {
+		super(name, age, nature, clan, isNPC);
+	}
+	
+	
+	public Disciplines getDisciplines() {
+		return disciplines;
+	}
+	public void setDisciplines(Disciplines disciplines) {
+		this.disciplines = disciplines;
+	}
+
+	public Backgrounds getBackgrounds() {
+		return backgrounds;
+	}
+	public void setBackgrounds(Backgrounds backgrounds) {
+		this.backgrounds = backgrounds;
+	}
+
+	public Virtues getVirtues() {
+		return virtues;
+	}
+	public void setVirtues(Virtues virtues) {
+		this.virtues = virtues;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+
+
+	@Override
+	public String Alignment() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

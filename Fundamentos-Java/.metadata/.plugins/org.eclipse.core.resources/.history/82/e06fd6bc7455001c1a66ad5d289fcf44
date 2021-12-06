@@ -1,0 +1,19 @@
+package testes;
+
+import model.Equipamento;
+import model.Ficha;
+import model.Personagem;
+import model.Usuario;
+
+public class FichaTeste {
+	public static void main(String[] args) {
+		
+		Ficha ficha = new Ficha();
+		
+		Personagem personagem = new Personagem();
+		Equipamento equipamento = new Equipmento();
+		Usuario usuario = new Usuario;
+	
+	
+	}
+}

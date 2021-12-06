@@ -1,0 +1,9 @@
+package model;
+
+public class Mago extends Personagem{
+	
+	private int inteligencia;
+	private int sabedoria;
+	private List<String> magias;
+	
+}

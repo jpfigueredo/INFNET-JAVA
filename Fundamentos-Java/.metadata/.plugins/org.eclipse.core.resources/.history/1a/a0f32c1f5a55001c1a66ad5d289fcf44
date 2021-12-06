@@ -1,0 +1,10 @@
+package model;
+
+public class Ladino {
+	
+	private int forca;
+	private int agilidade;
+	private int sorte;
+	
+	
+}

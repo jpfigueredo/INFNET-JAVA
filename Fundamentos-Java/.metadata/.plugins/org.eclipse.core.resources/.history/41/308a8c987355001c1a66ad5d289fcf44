@@ -1,0 +1,8 @@
+package model;
+
+public class Equipamento {
+	private String armaPrincipal;
+	private String armaSecundaria;
+	private String roupas;
+	
+}

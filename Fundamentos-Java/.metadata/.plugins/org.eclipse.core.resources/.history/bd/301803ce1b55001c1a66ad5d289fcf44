@@ -1,0 +1,14 @@
+package interfaces;
+
+public interface Skills {
+	private int animalKen;
+	private int drive;
+	private int etiquette;
+	private int firearms;
+	private int melee;
+	publicprivate int;
+	private int repair;
+	private int security;
+	private int stealth;
+	private int survival;
+}

@@ -1,0 +1,41 @@
+package model;
+
+import interfaces.Mental;
+import interfaces.Phisycal;
+import interfaces.Social;
+
+public class Attributes extends Character implements Phisycal, Social, Mental{
+
+	private Phisycal phisycal;
+	private Social social;
+	private Mental mental;
+	
+	public Attributes(User user, String name, String nature, String clan, boolean isNPC) {
+		super(user, name, nature, clan, isNPC);
+		// TODO Auto-generated constructor stub
+	}
+
+	public String[] getPhisycal() {
+		return Phisycal;
+	}
+	public void setPhisycal(String[] phisycal) {
+		Phisycal = phisycal;
+	}
+
+	public String[] getSocial() {
+		return Social;
+	}
+	public void setSocial(String[] social) {
+		Social = social;
+	}
+
+	public String[] getMental() {
+		return Mental;
+	}
+	public void setMental(String[] mental) {
+		Mental = mental;
+	}
+	
+	
+	
+}

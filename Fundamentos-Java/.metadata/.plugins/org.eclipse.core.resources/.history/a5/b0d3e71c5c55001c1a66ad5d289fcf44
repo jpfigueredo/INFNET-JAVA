@@ -1,0 +1,21 @@
+package testes;
+
+import exceptions.InvalidEmailException;
+import exceptions.InvalidNameException;
+import model.Usuario;
+
+public class UsuarioTeste {
+	public static void main(String[] args) {
+		
+		try {
+			Usuario user = new Usuario("Joao", "jp@jp.jp", 25);
+			user.setNome(null);
+			user.setEmail(null);
+			user.setIdade(0);
+			
+		}catch(InvalidNameException | InvalidEmailException | IdadeInvalidaException e) {
+			System.out.println(e.getMessage());
+		}
+
+	}
+}

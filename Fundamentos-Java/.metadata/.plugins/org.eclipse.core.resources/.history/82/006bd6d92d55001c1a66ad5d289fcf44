@@ -1,0 +1,12 @@
+package model;
+
+import java.util.List;
+
+public class Guerreiro extends Personagem{
+
+	private int forca;
+	private int resistencia;
+	private int defesa;
+	private List<String> meleeSkills;
+	
+}

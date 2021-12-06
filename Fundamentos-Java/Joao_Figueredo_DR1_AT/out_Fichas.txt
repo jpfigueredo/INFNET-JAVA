@@ -1,0 +1,1 @@
+[Guerreiro [forca=5, resistencia=5, defesa=5, meleeSkills=[atacar, defender]], Arqueiro [agilidade=10, dextreza=10, sorte=10, rangedSkills=[atirar, esquivar]], Mago [inteligencia=10, sabedoria=10, sorte=10, magias=[bola de fogo, bomba de fumaça]]];"felipe";Equipamento [armaPrincipal="Espada Grande +3", armaSecundaria="Prismatic Shield", roupas="Ornate Chestplate"];3

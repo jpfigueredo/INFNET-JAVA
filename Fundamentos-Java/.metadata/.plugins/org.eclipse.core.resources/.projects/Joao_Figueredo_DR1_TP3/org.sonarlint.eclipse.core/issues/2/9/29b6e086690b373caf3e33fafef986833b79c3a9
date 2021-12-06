@@ -1,0 +1,82 @@
+
+d	java:S106"9Replace this use of System.out or System.err by a logger.(ÿƒ®ëH·+RMAJORZ
+CODE_SMELL
+i	java:S106"9Replace this use of System.out or System.err by a logger.(ÑšÇÿÿÿÿÿH¸+RMAJORZ
+CODE_SMELL
+i	java:S106"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿH¹+RMAJORZ
+CODE_SMELL
+d	java:S106"9Replace this use of System.out or System.err by a logger.(Ç›§”Hº+RMAJORZ
+CODE_SMELL
+d	java:S106!"9Replace this use of System.out or System.err by a logger.(öûíßH»+RMAJORZ
+CODE_SMELL
+i	java:S106#"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿH¼+RMAJORZ
+CODE_SMELL
+i	java:S106$"9Replace this use of System.out or System.err by a logger.(ôô¸‘ûÿÿÿÿH½+RMAJORZ
+CODE_SMELL
+d	java:S106&"9Replace this use of System.out or System.err by a logger.(Ù¥µòH¾+RMAJORZ
+CODE_SMELL
+i	java:S106("9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿH¿+RMAJORZ
+CODE_SMELL
+d	java:S106)"9Replace this use of System.out or System.err by a logger.(ÆÀ³ÀHÀ+RMAJORZ
+CODE_SMELL
+
+java:S3776,"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(£Ÿ¹HÁ+RCRITICALZ
+CODE_SMELL
+i	java:S1066"9Replace this use of System.out or System.err by a logger.(—›ªìüÿÿÿÿHÎ+RMAJORZ
+CODE_SMELL
+i	java:S1067"9Replace this use of System.out or System.err by a logger.(¾õæ‘øÿÿÿÿHÏ+RMAJORZ
+CODE_SMELL
+i	java:S1068"9Replace this use of System.out or System.err by a logger.(·³‘ÒüÿÿÿÿHĞ+RMAJORZ
+CODE_SMELL
+d	java:S1069"9Replace this use of System.out or System.err by a logger.(“ˆªÍHÑ+RMAJORZ
+CODE_SMELL
+d	java:S106:"9Replace this use of System.out or System.err by a logger.(’¦¬ËHÒ+RMAJORZ
+CODE_SMELL
+i	java:S106;"9Replace this use of System.out or System.err by a logger.(…Û¤æşÿÿÿÿHÓ+RMAJORZ
+CODE_SMELL
+d	java:S106?"9Replace this use of System.out or System.err by a logger.(íªñŠHÔ+RMAJORZ
+CODE_SMELL
+i	java:S106H"9Replace this use of System.out or System.err by a logger.(‘ÒÓ¶üÿÿÿÿHÕ+RMAJORZ
+CODE_SMELL
+d	java:S106K"9Replace this use of System.out or System.err by a logger.(¿©Ş¤HÖ+RMAJORZ
+CODE_SMELL
+d	java:S106N"9Replace this use of System.out or System.err by a logger.(ŸáºªH×+RMAJORZ
+CODE_SMELL
+i	java:S106Q"9Replace this use of System.out or System.err by a logger.(äª½˜ÿÿÿÿÿHØ+RMAJORZ
+CODE_SMELL
+i	java:S106W"9Replace this use of System.out or System.err by a logger.(£ÌïñÿÿÿÿÿHÙ+RMAJORZ
+CODE_SMELL
+i	java:S106Z"9Replace this use of System.out or System.err by a logger.(ª¤·¬ıÿÿÿÿHÚ+RMAJORZ
+CODE_SMELL
+i	java:S106a"9Replace this use of System.out or System.err by a logger.(‘ÒÓ¶üÿÿÿÿHÛ+RMAJORZ
+CODE_SMELL
+d	java:S106d"9Replace this use of System.out or System.err by a logger.(¿©Ş¤HÜ+RMAJORZ
+CODE_SMELL
+i	java:S106g"9Replace this use of System.out or System.err by a logger.(öÚÓıÿÿÿÿHİ+RMAJORZ
+CODE_SMELL
+c	java:S106p"9Replace this use of System.out or System.err by a logger.(³í¾HŞ+RMAJORZ
+CODE_SMELL
+d	java:S106t"9Replace this use of System.out or System.err by a logger.(óÖõŞHß+RMAJORZ
+CODE_SMELL
+d	java:S106u"9Replace this use of System.out or System.err by a logger.(‚İÿ‰Hà+RMAJORZ
+CODE_SMELL
+d	java:S106w"9Replace this use of System.out or System.err by a logger.(ÃÅ ¢Há+RMAJORZ
+CODE_SMELL
+d	java:S106z"9Replace this use of System.out or System.err by a logger.(°éØ­Hâ+RMAJORZ
+CODE_SMELL
+e	java:S106…"9Replace this use of System.out or System.err by a logger.(ÿƒ®ëHã+RMAJORZ
+CODE_SMELL
+e	java:S106"9Replace this use of System.out or System.err by a logger.(ÏĞèƒHä+RMAJORZ
+CODE_SMELL
+e	java:S106"9Replace this use of System.out or System.err by a logger.(íªñŠHå+RMAJORZ
+CODE_SMELL
+d	java:S106–"9Replace this use of System.out or System.err by a logger.(áÅàcHæ+RMAJORZ
+CODE_SMELL
+Š
+java:S2293."YReplace the type specification in this constructor call with the diamond operator ("<>").(üÃÒÈşÿÿÿÿHç+RMINORZ
+CODE_SMELL
+Š
+java:S2293/"YReplace the type specification in this constructor call with the diamond operator ("<>").(ú¤ÇÍüÿÿÿÿHé+RMINORZ
+CODE_SMELL
+|	java:S117x"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è‚Ì¢Hë+RMINORZ
+CODE_SMELL

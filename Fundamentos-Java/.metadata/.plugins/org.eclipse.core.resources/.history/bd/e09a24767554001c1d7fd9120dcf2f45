@@ -1,0 +1,14 @@
+package interfaces;
+
+public interface Talents {
+	int Acting;
+	int alertness;
+	int athletics;
+	int brawl;
+	int dodge;
+	int empathy;
+	int intimidation;
+	int leadership;
+	int streetwise;
+	int subterfuge;
+}

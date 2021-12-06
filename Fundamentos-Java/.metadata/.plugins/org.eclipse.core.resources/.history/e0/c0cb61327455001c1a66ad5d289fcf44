@@ -1,0 +1,12 @@
+package testes;
+
+import model.Mago;
+
+public class MagoTeste {
+	public static void main(String[] args) {
+		
+		Mago guer = new Personagem();
+		
+		
+	}
+}

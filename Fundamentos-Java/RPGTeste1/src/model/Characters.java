@@ -1,0 +1,102 @@
+package model;
+
+import java.time.LocalDateTime;
+import exception.InvalidInputException;
+import exception.InvalidNameException;
+
+public class Characters{
+
+	private String name;
+	private int age;
+	private String alignment;
+	private String clan;
+	private boolean isNPC;
+	private LocalDateTime creationDate;
+	
+	public Characters(){
+		this.creationDate = LocalDateTime.now();
+	}
+	
+	public Characters(String name, int age, String alignment, String clan, boolean isNPC) throws InvalidInputException, InvalidNameException{
+		
+		if(name == null) {throw new InvalidNameException("Name cannot be null.");}
+		if(age < 0) {throw new InvalidInputException("Age cannot be less then 0!");}
+		
+		this.name = name;
+		this.age = age;
+		this.alignment = alignment;
+		this.clan = clan;
+		this.isNPC = isNPC;
+		this.creationDate = LocalDateTime.now();
+	}
+	
+	private boolean verifyNPC(boolean npc) {
+		if(npc) {
+			System.out.println("Character is not available.");
+		}else {
+			System.out.println("Character available to play.");
+		}
+		return npc;
+	}
+	
+	private 
+	
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAlignment() {
+		return alignment;
+	}
+	public void setAlignment(String nature) {
+		this.alignment = nature;
+	}
+
+	public String getClan() {
+		return clan;
+	}
+	public void setClan(String clan) {
+		this.clan = clan;
+	}
+
+	public boolean isNPC() {
+		return verifyNPC(isNPC);
+	}
+	public void setNPC(boolean isNPC) {
+		this.isNPC = isNPC;
+	}
+
+	public LocalDateTime getCreationDate() {
+		return creationDate;
+	}
+	
+	@Override
+	public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(name);
+		sb.append(" ; ");
+		sb.append(age);
+		sb.append(" ; ");
+		sb.append(alignment);
+		sb.append(" ; ");
+		sb.append(clan);
+		sb.append(" ; ");
+		sb.append(isNPC);
+		sb.append(" ; ");
+		sb.append(creationDate);
+		
+		return sb.toString();
+	}
+
+}

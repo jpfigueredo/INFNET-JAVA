@@ -1,0 +1,87 @@
+package features;
+
+public class Skills {
+	
+	private int animalKen;
+	private int drive;
+	private int etiquette;
+	private int firearms;
+	private int melee;
+	private int music;
+	private int repair;
+	private int security;
+	private int stealth;
+	private int survival;
+	
+	public Skills() {}
+	
+	
+	public int getAnimalKen() {
+		return animalKen;
+	}
+	public void setAnimalKen(int animalKen) {
+		this.animalKen = animalKen;
+	}
+	public int getDrive() {
+		return drive;
+	}
+	public void setDrive(int drive) {
+		this.drive = drive;
+	}
+	public int getEtiquette() {
+		return etiquette;
+	}
+	public void setEtiquette(int etiquette) {
+		this.etiquette = etiquette;
+	}
+	public int getFirearms() {
+		return firearms;
+	}
+	public void setFirearms(int firearms) {
+		this.firearms = firearms;
+	}
+	public int getMelee() {
+		return melee;
+	}
+	public void setMelee(int melee) {
+		this.melee = melee;
+	}
+	public int getMusic() {
+		return music;
+	}
+	public void setMusic(int music) {
+		this.music = music;
+	}
+	public int getRepair() {
+		return repair;
+	}
+	public void setRepair(int repair) {
+		this.repair = repair;
+	}
+	public int getSecurity() {
+		return security;
+	}
+	public void setSecurity(int security) {
+		this.security = security;
+	}
+	public int getStealth() {
+		return stealth;
+	}
+	public void setStealth(int stealth) {
+		this.stealth = stealth;
+	}
+	public int getSurvival() {
+		return survival;
+	}
+	public void setSurvival(int survival) {
+		this.survival = survival;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append();
+		return super.toString();
+	}
+	
+}

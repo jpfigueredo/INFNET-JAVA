@@ -1,0 +1,12 @@
+package features;
+
+import model.Abilities;
+
+public class Disciplines extends Abilities {
+
+	
+	
+	public Disciplines() {}
+	
+	
+}

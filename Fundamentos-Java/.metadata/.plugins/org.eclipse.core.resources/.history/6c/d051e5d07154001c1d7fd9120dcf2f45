@@ -1,0 +1,7 @@
+package interfaces;
+
+public interface Social {
+	private int Charisma;
+	private int Manipulation;
+	private int Appearance
+}

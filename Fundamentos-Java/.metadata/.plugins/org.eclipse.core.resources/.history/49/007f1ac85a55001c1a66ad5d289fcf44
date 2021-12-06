@@ -1,0 +1,106 @@
+package model;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+import exceptions.InvalidInputException;
+import exceptions.InvalidNameException;
+import interfaces.ControleStatus;
+
+public abstract class Personagem implements ControleStatus{
+	
+	private String nome;
+	private int level;
+	private double vida;
+	private double mana;
+	private double stamina;
+	private List<String> equipamentos;
+	private LocalDateTime creationDate;
+	
+	public Personagem(){
+		this.creationDate = LocalDateTime.now();
+	}
+	
+	public Personagem(String nome, int level, int vida, int mana, int stamina) throws InvalidNameException, InvalidInputException {
+
+		if(nome == null) {throw new InvalidNameException("Nome não pode ser nulo!");}
+		if(level < 0) {throw new InvalidInputException("Level não pode ser menor que 0.");}
+		
+		
+		this.nome = nome;
+		this.level = level;
+		this.vida = vida;
+		this.mana = mana;
+		this.stamina = stamina;
+		this.creationDate = LocalDateTime.now();
+	}
+	
+	public String verificaVida() {return vida==0 ? "Personagem está morto" : "Personagem está vivo";}
+
+	public String verificaMana() {return mana==0 ? "Sem mana!" : "Tem mana!";}
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public int getLevel() {
+		return level;
+	}
+	public void setLevel(int level) {
+		this.level = level;
+	}
+	
+	public double getVida() {
+		return vida;
+	}
+	public void setVida(double vida) {
+		this.vida = vida;
+	}
+	
+	public double getMana() {
+		return mana;
+	}
+	public void setMana(double mana) {
+		this.mana = mana;
+	}
+	
+	public double getStamina() {
+		return stamina;
+	}
+	public void setStamina(int stamina) {
+		this.stamina = stamina;
+	}
+	
+	public List<String> getEquipamentos() {
+		return equipamentos;
+	}
+
+	public void setEquipamentos(List<String> equipamentos) {
+		this.equipamentos = equipamentos;
+	}
+
+	public LocalDateTime getCreationDate() {
+		return creationDate;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Personagem [nome=");
+		builder.append(nome);
+		builder.append(", level=");
+		builder.append(level);
+		builder.append(", vida=");
+		builder.append(vida);
+		builder.append(", mana=");
+		builder.append(mana);
+		builder.append(", stamina=");
+		builder.append(stamina);
+		builder.append("]");
+		return builder.toString();
+	}
+		
+}

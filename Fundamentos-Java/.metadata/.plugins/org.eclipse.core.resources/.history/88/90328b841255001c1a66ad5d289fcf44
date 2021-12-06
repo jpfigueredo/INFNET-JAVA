@@ -1,0 +1,74 @@
+package model;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
+
+import exception.CharacterListNullException;
+import exception.InvalidUserException;
+
+public class UserSheet {
+	
+	private User user;
+	private List<Character> characterList;
+	private LocalDateTime lastSeen;
+	
+	public UserSheet(LocalDateTime creationDate, LocalDateTime lastSeen, User user) throws InvalidUserException{
+		if(user == null) {throw new InvalidUserException("User is null.");}
+		this.lastSeen = LocalDateTime.now();
+		this.user = user;
+	}
+
+	public String obterLinhaGravacaoArquivo() {
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append(user.getName());
+		sb.append(";");
+		sb.append(user.getEmail());
+		sb.append(";");
+		sb.append("Number of Characters: "+characterList.size());
+		sb.append("\r\n");
+		
+		return sb.toString();
+	}
+
+	public void print() throws CharacterListNullException{
+		if(characterList == null) {
+			throw new CharacterListNullException("Null Character List.");
+		}
+		
+		if(characterList.size() == 0) {
+			throw new CharacterListNullException("Null Character List.");
+		}
+
+		System.out.println("Relatório de Pedido:");
+		System.out.println(this);
+		System.out.println("#Produtos");
+		for(Produto p : produtos) {
+			System.out.println("- " + p);
+		}
+	}
+	
+	public User getUser() {
+		return user;
+	}
+	public List<Character> getCharacterList() {
+		return characterList;
+	}
+	public LocalDateTime getLastSeen() {
+		return lastSeen;
+	}	
+		
+	
+	@Override
+	public String toString() {
+		int qtChars = characterList != null ? characterList.size() : 0;
+		
+		DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		
+		return String.format("User: %s;%nLast Seen: %s;%nNumber of Characters: %d", 
+					this.user, this.lastSeen.format(format), qtChars);
+	}
+
+
+}

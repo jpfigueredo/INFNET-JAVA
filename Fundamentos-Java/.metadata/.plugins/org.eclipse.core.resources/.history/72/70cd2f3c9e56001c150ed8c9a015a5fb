@@ -1,0 +1,12 @@
+package testes;
+
+import model.Arqueiro;
+
+public class ArqueiroTeste {
+	
+	public static void main(String[] args) {
+		Arqueiro arch = new Arqueiro();
+		
+	}
+	
+}

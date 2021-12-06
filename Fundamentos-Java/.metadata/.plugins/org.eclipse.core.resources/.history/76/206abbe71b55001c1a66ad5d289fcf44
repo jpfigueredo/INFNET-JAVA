@@ -1,0 +1,10 @@
+package interfaces;
+
+public interface Phisycal {
+	
+	public static final int strength = 0;
+	public static final int dexterity = 0;
+	public static final int stamina = 0;
+	
+	
+}

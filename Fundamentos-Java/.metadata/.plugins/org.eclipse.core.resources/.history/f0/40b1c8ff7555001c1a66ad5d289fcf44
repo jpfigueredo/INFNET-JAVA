@@ -1,0 +1,30 @@
+package testes;
+
+import model.Equipamento;
+import model.Ficha;
+import model.Guerreiro;
+import model.Personagem;
+import model.Usuario;
+
+public class FichaTeste {
+	public static void main(String[] args) {
+		try {
+			Personagem prsng = new Guerreiro("Joel",1,200,0,100);
+			prsng.setForca(8);
+			prsng.set
+			
+			
+			
+			Equipamento equipamento = new Equipamento(null, null, null);
+			Usuario usuario = new Usuario(null, null, 0);
+				
+			Ficha ficha = new Ficha(personagem, equipamento, usuario);
+			
+			
+		}catch() {
+			
+		}
+
+	
+	}
+}

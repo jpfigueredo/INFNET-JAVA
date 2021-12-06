@@ -1,0 +1,26 @@
+package testes;
+
+import exception.InvalidInputException;
+import exception.InvalidNameException;
+import model.Characters;
+
+public class CharactersTest {
+	
+	public static void main(String[] args) {
+		
+		try {
+			Characters char1 = new Characters("Amarildo", 15, "Lawfull", "Camarilla", true);
+			System.out.println(char1);
+			
+		}catch (InvalidInputException| InvalidNameException e){
+			System.out.println(e.getMessage());
+		}
+		try {
+			
+		}catch(InvalidInputException| InvalidNameException e){
+			
+		}
+		
+
+	}
+}

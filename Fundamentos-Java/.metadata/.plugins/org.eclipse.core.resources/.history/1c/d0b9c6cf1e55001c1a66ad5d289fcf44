@@ -1,0 +1,15 @@
+package features;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import model.Abilities;
+
+public class Disciplines extends Abilities {
+
+	private List<String> disciplines = new ArrayList<String>();; 
+	
+	public Disciplines() {}
+	
+	
+}

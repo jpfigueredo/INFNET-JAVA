@@ -1,0 +1,9 @@
+package interfaces;
+
+public class Phisycal extends Attributes{
+	
+	private int strength;
+	private int dexterity;
+	private int stamina;
+
+}

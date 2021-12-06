@@ -1,0 +1,84 @@
+package model;
+
+import java.util.List;
+
+public abstract class Personagem {
+	
+	private String nome;
+	private int level;
+	private int vida;
+	private int mana;
+	private int stamina;
+	private List<String> equipamentos;
+	
+	public Personagem() {}
+		
+	public Personagem(String nome, int level, int vida, int mana, int stamina) {
+		super();
+		this.nome = nome;
+		this.level = level;
+		this.vida = vida;
+		this.mana = mana;
+		this.stamina = stamina;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public int getLevel() {
+		return level;
+	}
+	public void setLevel(int level) {
+		this.level = level;
+	}
+	public int getVida() {
+		return vida;
+	}
+	public void setVida(int vida) {
+		this.vida = vida;
+	}
+	public int getMana() {
+		return mana;
+	}
+	public void setMana(int mana) {
+		this.mana = mana;
+	}
+	public int getStamina() {
+		return stamina;
+	}
+	public void setStamina(int stamina) {
+		this.stamina = stamina;
+	}
+	public List<String> getEquipamentos() {
+		return equipamentos;
+	}
+
+	public void setEquipamentos(List<String> equipamentos) {
+		this.equipamentos = equipamentos;
+	}
+
+	
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Personagem [nome=");
+		builder.append(nome);
+		builder.append(", level=");
+		builder.append(level);
+		builder.append(", vida=");
+		builder.append(vida);
+		builder.append(", mana=");
+		builder.append(mana);
+		builder.append(", stamina=");
+		builder.append(stamina);
+		builder.append("]");
+		return builder.toString();
+	}
+	
+	
+	
+	
+}

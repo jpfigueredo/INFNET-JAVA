@@ -1,0 +1,77 @@
+package model;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+import exception.JogadorInexistenteException;
+
+public class Ficha{
+	
+	private Equipamento equipamento;
+	private Jogador jogador;
+	private List<Personagem> personagens;
+	private LocalDateTime data;
+	
+	public Ficha(Personagem personagem, Equipamento equipamento, Jogador jogador) throws JogadorInexistenteException {
+		if(personagens == null) {throw new JogadorInexistenteException("Impossível realizar o pedido sem um solicitante associado!");}
+		
+		this.personagens = personagens;
+		this.equipamento = equipamento;
+		this.jogador = jogador;
+		this.data = LocalDateTime.now();
+	}
+	
+	public String obterLinhaGravacaoArquivo() {
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append(personagens.toString());
+		sb.append(";");
+		sb.append(jogador.getNome());
+		sb.append(";");
+		sb.append(equipamento.size());
+		//TODO Criar um método que faça o cálculo do valor total do pedido
+//		sb.append(";");
+//		sb.append(valorTotalPedido);
+		sb.append("\r\n");
+		
+		return sb.toString();
+	}
+
+	public Personagem getPersonagem() {
+		return personagens;
+	}
+
+	public void setPersonagem(Personagem personagem) {
+		this.personagens = personagem;
+	}
+
+	public Equipamento getEquipamento() {
+		return equipamento;
+	}
+
+	public void setEquipamento(Equipamento equipamento) {
+		this.equipamento = equipamento;
+	}
+
+	public Jogador getJogador() {
+		return jogador;
+	}
+
+	public void setUsuario(Jogador jogador) {
+		this.jogador = jogador;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Ficha [personagem=");
+		builder.append(personagens);
+		builder.append(", equipamento=");
+		builder.append(equipamento);
+		builder.append(", usuario=");
+		builder.append(jogador);
+		builder.append("]");
+		return builder.toString();
+	}
+		
+}

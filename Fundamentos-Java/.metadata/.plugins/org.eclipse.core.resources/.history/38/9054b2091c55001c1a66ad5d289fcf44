@@ -1,0 +1,9 @@
+package features;
+
+public class Mental {
+	
+	private int perception;
+	private int intelligence;
+	private int wits;
+
+}

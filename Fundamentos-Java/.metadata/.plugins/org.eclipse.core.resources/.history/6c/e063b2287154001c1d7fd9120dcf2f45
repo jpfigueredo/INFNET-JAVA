@@ -1,0 +1,15 @@
+package model;
+
+public class Attributes extends Character{
+
+	private String[] Phisycal;
+	private String[] Dexterity;
+	
+	public Attributes(User user, String name, String nature, String clan, boolean isNPC) {
+		super(user, name, nature, clan, isNPC);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+}

@@ -1,0 +1,21 @@
+package model;
+
+import java.util.List;
+
+import interfaces.Expertises;
+import interfaces.Knowledges;
+import interfaces.Talents;
+
+public class Abilities extends Character implements Talents, Expertises, Knowledges{
+
+	private Talents talents;
+	private Expertises expertises;
+	private Knowledges knowledges;
+	
+	
+	public Abilities(User user, String name, int age, String nature, String clan, boolean isNPC) {
+		super(user, name, age, nature, clan, isNPC);
+		// TODO Auto-generated constructor stub
+	}
+
+}

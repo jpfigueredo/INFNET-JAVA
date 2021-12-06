@@ -1,0 +1,15 @@
+package model;
+
+public class Skills extends Character{
+
+	private String[] Talents;
+	private String[] expertises;
+	private string[] knowledges;
+	
+	
+	public Skills(User user, String name, String nature, String clan, boolean isNPC) {
+		super(user, name, nature, clan, isNPC);
+		// TODO Auto-generated constructor stub
+	}
+
+}

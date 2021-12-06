@@ -1,0 +1,9 @@
+package features;
+
+public interface Mental {
+	
+	public static final int perception = 0;
+	public static final int intelligence = 0;
+	public static final int wits = 0;
+
+}

@@ -1,0 +1,13 @@
+
+public class Cliente implements Autenticavel{
+	
+	public void autentica(Autenticavel auth) {
+		boolean autenticou = func.autentica(this.senha);
+		if(autenticou) {
+			System.out.println("Pode entrar no sistema.");
+		}else {
+			System.out.println("Não pode entrar no sistema");
+		}
+	}
+	
+}

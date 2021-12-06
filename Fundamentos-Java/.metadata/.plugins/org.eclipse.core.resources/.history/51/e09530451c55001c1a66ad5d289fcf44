@@ -1,0 +1,12 @@
+package features;
+
+import model.Abilities;
+
+public class Backgrounds extends Abilities {
+
+	private String backHistory;
+	
+	
+	public Backgrounds(){}
+
+}

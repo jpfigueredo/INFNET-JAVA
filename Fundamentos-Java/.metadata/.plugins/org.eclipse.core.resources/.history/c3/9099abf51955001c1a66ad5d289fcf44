@@ -1,0 +1,35 @@
+package testes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import exception.CharacterListNullException;
+import exception.InvalidUserException;
+import model.Abilities;
+import model.Advantages;
+import model.Characters;
+import model.Status;
+import model.UserSheet;
+
+public class UserSheetTest {
+
+	public static void main(String[] args) {
+		
+		List<Characters> characterList = new ArrayList<Characters>();
+		
+		try {
+			Status stats = new Status(100, 50, 5, "Scared of crows.");
+			Advantages advantages = new Advantages(disciplines, backgrounds, virtues);
+			Abilities abilities = new Abilities(talents, knowledges, skills);
+			
+
+			characterList.add(stats, advantages, abilities);
+			System.out.println(stats); 
+		}catch (InvalidUserException | CharacterListNullException e){
+			
+		}
+		try {}catch(){}
+		try {}catch(){}
+		
+	}
+}

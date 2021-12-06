@@ -1,0 +1,61 @@
+package model;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
+
+public class UserSheet {
+	
+	private User user;
+	private List<Character> characterList;
+	private LocalDateTime lastSeen;
+	
+	public UserSheet(LocalDateTime creationDate, LocalDateTime lastSeen) {
+		this.lastSeen = LocalDateTime.now();
+		this.user = user;
+	}
+	
+	public UserSheet() {
+//		return Ficha do personagem {personagem}
+//		\n do usuário {user}
+//		\n data de criacao {creationDate}
+//		Visto pela ultima vez: {format lastSeen}
+		
+		lastSeen = LocalDateTime.now();
+	}
+	
+	public String obterLinhaGravacaoArquivo() {
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append(user.getNome());
+		sb.append(";");
+		sb.append(produtos.size());
+		//TODO Criar um método que faça o cálculo do valor total do pedido
+//		sb.append(";");
+//		sb.append(valorTotalPedido);
+		sb.append("\r\n");
+		
+		return sb.toString();
+	}
+	
+	@Override
+	public String toString() {
+		int qtChars = characterList != null ? characterList.size() : 0;
+		
+		DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		
+		return String.format("User: %s;%nLast Seen: %s;%nNumber of Characters: %d", 
+					this.user, this.lastSeen.format(format), qtChars);
+	}
+
+	public User getUser() {
+		return user;
+	}
+	public List<Character> getCharacterList() {
+		return characterList;
+	}
+	public LocalDateTime getLastSeen() {
+		return lastSeen;
+	}	
+	
+}

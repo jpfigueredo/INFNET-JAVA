@@ -1,0 +1,39 @@
+package testes;
+
+import java.util.List;
+
+import model.Equipamento;
+import model.Ficha;
+import model.Guerreiro;
+import model.Personagem;
+import model.Usuario;
+
+public class FichaTeste {
+	public static void main(String[] args) {
+		try {
+			Guerreiro personagem = new Guerreiro("Joel",1,200,0,100);
+			personagem.setForca(8);
+			personagem.setDefesa(5);
+			personagem.setResistencia(5);
+			personagem.setMeleeSkills(List("defender","atacar","esquivar"));
+			
+			
+			
+			Equipamento equipamento = new Equipamento(null, null, null);
+			Usuario usuario = new Usuario(null, null, 0);
+				
+			Ficha ficha = new Ficha(personagem, equipamento, usuario);
+			
+			
+		}catch() {
+			
+		}
+
+	
+	}
+
+	private static List<String> List(String string, String string2, String string3) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

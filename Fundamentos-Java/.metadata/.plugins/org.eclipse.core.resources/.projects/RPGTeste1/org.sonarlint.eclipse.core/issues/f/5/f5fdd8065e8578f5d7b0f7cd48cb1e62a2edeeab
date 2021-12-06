@@ -1,0 +1,21 @@
+
+Œ
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").( ôıÚ8†¦ß³Ø/H£"RMINORZ
+CODE_SMELL
+‘
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(„ÉÄØıÿÿÿÿ8ƒ¨‡°Ø/H–"RMINORZ
+CODE_SMELL
+`	java:S108-")Either remove or fill this block of code.(ˆ‰¹üÿÿÿÿ8Áø°Ø/HêRMAJORZ
+CODE_SMELL
+i	java:S106+"9Replace this use of System.out or System.err by a logger.(¹Ø•íüÿÿÿÿHÃRMAJORZ
+CODE_SMELL
+p	java:S106*"9Replace this use of System.out or System.err by a logger.(îì¹£øÿÿÿÿ8üÊİ³Ø/H˜"RMAJORZ
+CODE_SMELL
+n	java:S1250"<This block of commented-out lines of code should be removed.(Œ‰©§8üÊİ³Ø/H™"RMAJORZ
+CODE_SMELL
+`
+java:S1128"-Remove this unused import 'features.Talents'.(î›Ïş8Öæğ³Ø/Hü"RMINORZ
+CODE_SMELL
+_
+java:S1128",Remove this unused import 'model.UserSheet'.(şçÇÊ8Öæğ³Ø/Hş"RMINORZ
+CODE_SMELL

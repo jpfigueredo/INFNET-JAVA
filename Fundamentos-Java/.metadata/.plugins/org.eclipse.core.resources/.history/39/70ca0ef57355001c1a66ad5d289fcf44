@@ -1,0 +1,7 @@
+package testes;
+
+public class FichaTeste {
+	public static void main(String[] args) {
+		
+	}
+}

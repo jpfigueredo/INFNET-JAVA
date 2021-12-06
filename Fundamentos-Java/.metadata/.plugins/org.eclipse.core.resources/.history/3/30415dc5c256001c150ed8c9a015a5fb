@@ -1,0 +1,44 @@
+package testes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import exceptions.NumeroNegativoException;
+import exceptions.NumeroNuloException;
+import exceptions.SkillsInvalidasException;
+import model.Equipamento;
+import model.Ficha;
+import model.Guerreiro;
+import model.Personagem;
+import model.Jogador;
+
+public class FichaTeste {
+	public static void main(String[] args) {
+		
+		try {
+			List<String> skills = new ArrayList<String>();
+			skills.add("atirar");
+			skills.add("defender");
+
+			Personagem personagem = new Guerreiro(5, 10, 10, skills);
+			personagem.setNome("joao");
+			personagem.setLevel(100);
+			personagem.setVida(100);
+			personagem.setMana(0);
+			personagem.setStamina(100);
+			
+			Equipamento equipamento = new Equipamento(personagem, "Espada Grande +3", "Prismatic Shield", "Ornate Chestplate");
+			Jogador usuario = new Jogador("Joao Figueredo", "jp@jp.jp", 25);
+				
+			Ficha ficha = new Ficha(personagem, equipamento, usuario);
+			
+			System.out.println(ficha);
+		}catch(SkillsInvalidasException | NumeroNegativoException | NumeroNuloException e){
+			System.out.println(e.getMessage());
+			
+		}
+
+	
+	}
+
+}

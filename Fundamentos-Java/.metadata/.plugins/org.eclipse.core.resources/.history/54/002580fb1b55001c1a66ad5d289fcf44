@@ -1,0 +1,9 @@
+package features;
+
+public class Social {
+	
+	private int charisma;
+	private int manipulation;
+	private int appearance;
+	
+}

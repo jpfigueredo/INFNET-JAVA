@@ -1,0 +1,43 @@
+package model;
+
+import interfaces.Skills;
+import exception.InvalidInputException;
+import exception.InvalidNameException;
+import interfaces.Knowledges;
+import interfaces.Talents;
+
+public class Abilities extends Character implements Talents, Skills, Knowledges{
+
+	private Talents talents;
+	private Skills skills;
+	private Knowledges knowledges;
+	
+	
+	public Abilities(String name, int age, String nature, String clan, boolean isNPC) throws InvalidInputException, InvalidNameException {
+		super(name, age, nature, clan, isNPC);
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public Talents getTalents() {
+		return talents;
+	}
+	public void setTalents(Talents talents) {
+		this.talents = talents;
+	}
+
+	public Skills getSkills() {
+		return skills;
+	}
+	public void setSkills(Skills skills) {
+		this.skills = skills;
+	}
+
+	public Knowledges getKnowledges() {
+		return knowledges;
+	}
+	public void setKnowledges(Knowledges knowledges) {
+		this.knowledges = knowledges;
+	}
+
+}

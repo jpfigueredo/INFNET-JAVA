@@ -1,0 +1,8 @@
+
+p	java:S106#"9Replace this use of System.out or System.err by a logger.(´š¬Óıÿÿÿÿ8¨—Û´Ø/H¢&RMAJORZ
+CODE_SMELL
+p	java:S106%"9Replace this use of System.out or System.err by a logger.(É‰’ùÿÿÿÿ8¨—Û´Ø/H£&RMAJORZ
+CODE_SMELL
+}
+java:S1124,"EReorder the modifiers to comply with the Java Language Specification.(ƒÈ±íùÿÿÿÿ8éĞ³µØ/H¤&RMINORZ
+CODE_SMELL

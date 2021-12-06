@@ -1,0 +1,46 @@
+package model;
+
+import java.util.List;
+
+public class Mago extends Personagem{
+	
+	private int inteligencia;
+	private int sabedoria;
+	private int sorte;
+	private List<String> magias;
+	
+	public Mago(int inteligencia, int sabedoria, int sorte, List<String> magias) {
+		super();
+		this.inteligencia = inteligencia;
+		this.sabedoria = sabedoria;
+		this.sorte = sorte;
+		this.magias = magias;
+	}
+	
+	public int getInteligencia() {
+		return inteligencia;
+	}
+	public void setInteligencia(int inteligencia) {
+		this.inteligencia = inteligencia;
+	}
+	public int getSabedoria() {
+		return sabedoria;
+	}
+	public void setSabedoria(int sabedoria) {
+		this.sabedoria = sabedoria;
+	}
+	public int getSorte() {
+		return sorte;
+	}
+	public void setSorte(int sorte) {
+		this.sorte = sorte;
+	}
+	public List<String> getMagias() {
+		return magias;
+	}
+	public void setMagias(List<String> magias) {
+		this.magias = magias;
+	}
+	
+	
+}

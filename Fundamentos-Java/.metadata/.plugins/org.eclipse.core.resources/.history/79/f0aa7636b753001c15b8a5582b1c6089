@@ -1,0 +1,20 @@
+
+public class SistemaInterno{
+	
+	private int senha = 2222;
+	
+
+	public void autentica(Autenticavel auth) {
+		boolean autenticou = func.autentica(this.senha);
+		if(autenticou) {
+			System.out.println("Pode entrar no sistema.");
+		}else {
+			System.out.println("Não pode entrar no sistema");
+		}
+	}
+	
+	public double getBonificacao() {
+		System.out.println("Chamando o método bonificação do GERENTE!");
+		return super.getSalario();
+	}
+}

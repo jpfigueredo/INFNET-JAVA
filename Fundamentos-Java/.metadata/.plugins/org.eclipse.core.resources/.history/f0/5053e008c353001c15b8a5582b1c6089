@@ -1,0 +1,13 @@
+package com.amigosCode;
+
+public class TheArrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] colors = new Strig[5];
+		colors[0] = "purple";
+		colors[1] = "red";
+				
+	}
+
+}

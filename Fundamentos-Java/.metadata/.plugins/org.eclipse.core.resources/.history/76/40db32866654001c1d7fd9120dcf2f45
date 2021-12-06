@@ -1,0 +1,36 @@
+package model;
+
+public class User {
+	String name;
+	String CPF;
+	String email;
+	
+	public User(String name, String cpf, String email) {
+		this.name = name;
+		this.CPF = cpf;
+		this.email = email;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public String getCPF() {
+		return CPF;
+	}
+	public String getEmail() {
+		return email;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append(name);
+		sb.append(";");		
+		sb.append(email);
+		sb.append(";");
+		sb.append(CPF);
+		
+		return sb.toString();
+	}
+}

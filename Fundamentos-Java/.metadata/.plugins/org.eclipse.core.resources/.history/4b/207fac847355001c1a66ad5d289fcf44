@@ -1,0 +1,11 @@
+package model;
+
+public class Equipamento {
+	private String arma;
+	private String escudo;
+	private String vestimenta;
+	private String luva;
+	private String capacete;
+	private String sapato;
+	
+}

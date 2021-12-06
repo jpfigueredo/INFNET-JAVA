@@ -1,0 +1,19 @@
+package testes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import model.Arqueiro;
+import model.Personagem;
+
+public class ArqueiroTeste {
+	
+	public static void main(String[] args) {
+		List<String> skills = new ArrayList()<String>();
+		skills.add("atirar", "esquivar");
+		
+		Personagem arch = new Arqueiro(5,5,5,skills);
+		System.out.println(arch.toString());
+	}
+	
+}

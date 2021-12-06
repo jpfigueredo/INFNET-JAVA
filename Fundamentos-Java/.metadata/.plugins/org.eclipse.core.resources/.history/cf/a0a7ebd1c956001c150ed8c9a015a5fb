@@ -1,0 +1,105 @@
+package testes;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+import exceptions.IdadeInvalidaException;
+import exceptions.InvalidEmailException;
+import exceptions.InvalidNameException;
+import model.Jogador;
+import model.Personagem;
+
+public class ArquivoTeste {
+	public static void main(String[] args) throws Exception {
+		
+		try {
+			
+			String arquivo = "Fichas.txt";
+			FileReader fileR = new FileReader(arquivo);
+			BufferedReader leitura = new BufferedReader(fileR);
+			FileWriter fileW = new FileWriter("out_"+arquivo);
+			BufferedWriter escrita = new BufferedWriter(fileW);
+			
+			String linha = leitura.readLine();
+			String[] campos = null;
+			List<Personagem> localMesas = new ArrayList<Personagem>();
+			Personagem personagem =  null;
+                       
+			while(linha != null) {
+				
+				campos = linha.split(";");
+				String tipo = campos[0];
+				
+				switch (tipo.toUpperCase()) {
+					case "P":				
+//                        Jogador jogador = null;
+	                    try{
+	                    	Jogador jogador = new Jogador("Joao","joao@jao.jo",88);
+                    	} catch (InvalidNameException | InvalidEmailException | IdadeInvalidaException e) {
+                    		System.out.println(e.getMessage());
+                    	}
+                        
+					case "B":
+                        try {
+                            Balcao balcao = new Balcao(Integer.valueOf(campos[1]), Boolean.valueOf(campos[2]), Integer.valueOf(campos[3]));
+                            balcao.setBebidaAlcoolica(campos[4]);
+                            balcao.setPetisco(campos[5]);
+                            balcao.setShotsAlcoolicos(Integer.valueOf(campos[6]));
+                            localMesas.add(balcao);        
+                            //System.out.println(balcao);
+                        } catch (Pre�oMesaException | QntdLugaresException e) {
+                            System.out.println(e.getMessage());
+                        }
+                        break;
+					
+					case "M":
+                       try {
+            	   			Mesa mesa = new Mesa(Integer.valueOf(campos[1]),Boolean.valueOf(campos[2]),Integer.valueOf(campos[3]));  
+            	   			mesa.setVelaRomantica(Boolean.valueOf(campos[4]));    
+                            mesa.setId(Integer.valueOf(campos[5]));
+                            mesa.setIluminacaoEspecial(campos[6]);
+                            localMesas.add(mesa);
+                            //System.out.println(mesa);
+                            
+                       } catch ( |  e) {
+                                System.out.println(e.getMessage());
+                       }
+                       break;
+					
+					case "E":
+                        try {
+                        	Externa externa = new Externa(Integer.valueOf(campos[1]),Boolean.valueOf(campos[2]),Integer.valueOf(campos[3]));
+                            externa.setQntdVentiladores(Integer.valueOf(campos[4]));
+                            externa.setFrio(Boolean.valueOf(campos[5]));
+                            externa.setMusico(campos[6]);
+                            localMesas.add(externa);
+                           
+                            //System.out.println(externa);
+                        } catch (Pre�oMesaException | QntdLugaresException e) {
+                            System.out.println(e.getMessage());
+                        }
+				
+				}
+				linha = leitura.readLine();
+                                
+                try {
+                   restaurante.impressao();
+                   escrita.write(restaurante.obterLinhaGrava��oArquivo());				
+                } catch (MesaInvalidaException e) {
+                    System.out.println(e.getMessage());
+                }
+			}			
+			leitura.close();
+			escrita.close();
+                        
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

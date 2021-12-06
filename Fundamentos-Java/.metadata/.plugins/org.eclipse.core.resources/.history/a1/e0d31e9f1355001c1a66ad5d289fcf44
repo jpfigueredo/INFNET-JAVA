@@ -1,0 +1,49 @@
+package model;
+
+import exception.InvalidInputException;
+import exception.InvalidNameException;
+import interfaces.Mental;
+import interfaces.Phisycal;
+import interfaces.Social;
+
+public class Attributes extends Character implements Phisycal, Social, Mental{
+
+	private Phisycal phisycal;
+	private Social social;
+	private Mental mental;
+	
+	public Attributes(User user, String name, int age, String nature, String clan, boolean isNPC) throws InvalidInputException, InvalidNameException {
+		super(name, age, nature, clan, isNPC);
+		// TODO Auto-generated constructor stub
+	}
+
+	public Phisycal getPhisycal() {
+		return phisycal;
+	}
+	public void setPhisycal(Phisycal phisycal) {
+		this.phisycal = phisycal;
+	}
+
+	public Social getSocial() {
+		return social;
+	}
+	public void setSocial(Social social) {
+		this.social = social;
+	}
+
+	public Mental getMental() {
+		return mental;
+	}
+	public void setMental(Mental mental) {
+		this.mental = mental;
+	}
+
+	@Override
+	public String Alignment() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	
+}
