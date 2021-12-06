@@ -13,5 +13,6 @@ Course focus:
 </h3>
 <img src="https://github.com/w4sabi/INFNET-JAVA/blob/main/javaRoadmap.png?raw=true"/>
 <p>
-Files will be added to the repository upon learning evolution.
+NOW 
+  ITERATE!
 </p>
