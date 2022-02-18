@@ -17,9 +17,7 @@ public class UserTest {
 		UserRepository.doAdd(user);
 
 		List<User> uList = UserRepository.getList();
-
-		for (User u : uList) {
-			System.out.println("- " + u);
-		}
+		uList.forEach(u -> System.out.println(u));
+		uList.size();
 	}
 }
