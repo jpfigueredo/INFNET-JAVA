@@ -1,0 +1,9 @@
+body {
+  font-family: arial;
+}
+.hide {
+  display: none;
+}
+p {
+  font-weight: bold;
+}
