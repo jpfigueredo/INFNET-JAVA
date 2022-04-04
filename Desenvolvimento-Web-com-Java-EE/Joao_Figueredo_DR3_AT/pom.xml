@@ -15,7 +15,7 @@
 	<name>Joao_Figueredo_DR3_AT</name>
 	<description>Projeto de gestão de Personagens de RPG</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 
@@ -43,6 +43,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.27</version>
 		</dependency>
 
 		<dependency>

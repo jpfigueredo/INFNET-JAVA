@@ -1,45 +1,36 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>VenturaHr</title>
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <meta charset="utf-8" />
+	<title>PB JAVA</title>
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-	
+	<div class="container">
+	  <h2>Registration system</h2>
 
-<div class="container">
+		<c:if test="${not empty msg}">
+			<div class="alert alert-warning">
+			  <strong>Atention!</strong> ${msg}
+			</div>
+		</c:if>
 
-<div class="row" style="margin-top:20px">
-    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-		<form action="/usuarios" role="form">
-			<fieldset>
-				<h2>Bem vindo(a)</h2>
-				<hr class="colorgraph">
-				<div class="form-group">
-                    <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Endereço de email">
-				</div>
-				<div class="form-group">
-                    <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Senha">
-				</div>
-				<hr class="colorgraph">
-				<div class="row">
-					<div class="col-xs-6 col-sm-6 col-md-6">
-                        <input type="submit" class="btn btn-lg btn-success btn-block" value="Entrar">
-					</div>
-					<div class="col-xs-6 col-sm-6 col-md-6">
-						<a href="cadastro.jsp" class="btn btn-lg btn-primary btn-block">Registrar-se</a>
-					</div>
-				</div>
-			</fieldset>
-		</form>
+	  <form action="/login" method="POST">
+	    <div class="form-group">
+	      <label>E-mail:</label>
+	      <input type="email" class="form-control" placeholder="Enter email" name="email" value="">
+	    </div>
+	    <div class="form-group">
+	      <label>Password:</label>
+	      <input type="password" class="form-control" placeholder="Enter password" name="password" value="">
+	    </div>
+            <button type="submit" class="btn btn-secondary btn-lg btn-block">Enter</button>
+	  </form>
 	</div>
-</div>
-
-</div>
+	  <form action="/" method>
+        <button type="submit" class="btn btn-secondary btn-lg btn-block">Return to Home page</button>
+      </form>
 </body>
 </html>

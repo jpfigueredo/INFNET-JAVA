@@ -1,17 +1,14 @@
 package br.edu.infnet.EmpresaACME.model;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "cotacao")
+@Table(name = "Cotacoes")
 public class Cotacao {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,9 +17,13 @@ public class Cotacao {
 
 	private double preco;
 
-	@OneToOne(cascade = { CascadeType.PERSIST, CascadeType.REMOVE }, orphanRemoval = true)
-	@JoinColumn(name = "id_produto")
-	private Produto produto;
+//	@OneToOne()
+//	@JoinColumn(name = "id_produto")
+//	private Produto produto;
+
+//	@ManyToMany()
+//	@JoinColumn(name = "id_fornecedor")
+//	private Fornecedor fornecedor;
 
 	public Cotacao() {
 	}

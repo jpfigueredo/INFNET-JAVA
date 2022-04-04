@@ -1,19 +1,14 @@
 package br.edu.infnet.EmpresaACME.model;
 
-import java.util.List;
-
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "fornecedor")
+@Table(name = "Fornecedores")
 public class Fornecedor {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,17 +17,17 @@ public class Fornecedor {
 
 	private String nome;
 
-	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumn(name = "id_produto")
-	private List<Produto> produtos;
+//	@OneToMany(cascade = CascadeType.ALL)
+//	@JoinColumn(name = "id_produto")
+//	private List<Produto> produtos;
 
-	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumn(name = "id_contato")
-	private List<Contato> contatos;
+//	@OneToMany(cascade = CascadeType.ALL)
+//	@JoinColumn(name = "id_contato")
+//	private List<Contato> contatos;
 
-	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumn(name = "id_cotacao")
-	private List<Cotacao> cotacoes;
+//	@OneToMany(cascade = CascadeType.ALL)
+//	@JoinColumn(name = "id_cotacao")
+//	private List<Cotacao> cotacoes;
 
 	public Fornecedor() {
 	}
@@ -44,18 +39,18 @@ public class Fornecedor {
 	public String getNome() {
 		return nome;
 	}
+//
+//	public List<Produto> getProdutos() {
+//		return produtos;
+//	}
 
-	public List<Produto> getProdutos() {
-		return produtos;
-	}
+//	public List<Contato> getContatos() {
+//		return contatos;
+//	}
 
-	public List<Contato> getContatos() {
-		return contatos;
-	}
-
-	public List<Cotacao> getCotacoes() {
-		return cotacoes;
-	}
+//	public List<Cotacao> getCotacoes() {
+//		return cotacoes;
+//	}
 
 	public void setId(int id) {
 		this.id = id;
@@ -65,16 +60,16 @@ public class Fornecedor {
 		this.nome = nome;
 	}
 
-	public void setProdutos(List<Produto> produtos) {
-		this.produtos = produtos;
-	}
+//	public void setProdutos(List<Produto> produtos) {
+//		this.produtos = produtos;
+//	}
 
-	public void setContatos(List<Contato> contatos) {
-		this.contatos = contatos;
-	}
+//	public void setContatos(List<Contato> contatos) {
+//		this.contatos = contatos;
+//	}
 
-	public void setCotacoes(List<Cotacao> cotacoes) {
-		this.cotacoes = cotacoes;
-	}
+//	public void setCotacoes(List<Cotacao> cotacoes) {
+//		this.cotacoes = cotacoes;
+//	}
 
 }

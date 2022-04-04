@@ -68,19 +68,7 @@ private static final String NOMEBUCKET = "bucket-java-nuvem";
             System.out.println(os.getKey());
         }
     }
-    
-    public static void uploadObjeto(AmazonS3 s3) {
-        
-        try {
-            s3.putObject(NOMEBUCKET, 
-                "imagens/lpmaia.jpg", 
-                new File("C:\\Users\\lpmaia\\Desktop\\lpmaia2.jpg"));
-            System.out.println("Upload completo");
-        }
-        catch (AmazonS3Exception ex) {
-            System.out.println(ex.getMessage());
-        }
-    }
+
     
     public static void listarBuckets(AmazonS3 s3) {
         
@@ -100,16 +88,5 @@ private static final String NOMEBUCKET = "bucket-java-nuvem";
         s3.createBucket(NOMEBUCKET);
         System.out.println("Bucket criado");
     }
-    
-    public static AmazonS3 configurar() {
-        AWSCredentials credentials = new BasicAWSCredentials(
-            "AKIAWNJYWBWLSAGVXVBF",
-            "hrA3ZBYqpexWOVEdI8ZdxtYarvIVX1xo2k5tjSTl");
-        
-        AmazonS3 s3 = AmazonS3ClientBuilder.standard()
-            .withCredentials(new AWSStaticCredentialsProvider(credentials))
-            .withRegion(Regions.SA_EAST_1)
-            .build();
-        return s3;
-    }
+
 }
